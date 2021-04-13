@@ -1,0 +1,28 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Apr 13 10:56:55 2021
+# Process ID: 4584
+# Current directory: D:/DE1_projekt/Parking_sensor
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8636 D:\DE1_projekt\Parking_sensor\Parking_sensor.xpr
+# Log file: D:/DE1_projekt/Parking_sensor/vivado.log
+# Journal file: D:/DE1_projekt/Parking_sensor\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/DE1_projekt/Parking_sensor/Parking_sensor.xpr
+INFO: [Project 1-313] Project file moved from 'D:/Users/vitja/Documents/GitHub/DE1_projekt/DE1_projekt/Parking_sensor' since last save.
+WARNING: [filemgmt 56-3] Board Part Repository Path: Could not find the directory 'C:/Users/vitja/AppData/Roaming/Xilinx/Vivado/2020.2/xhub/board_store/xilinx_board_store'.
+WARNING: [filemgmt 56-2] Default IP Output Path : Could not find the directory 'D:/DE1_projekt/Parking_sensor/Parking_sensor.gen/sources_1', nor could it be found using path 'D:/Users/vitja/Documents/GitHub/DE1_projekt/DE1_projekt/Parking_sensor/Parking_sensor.gen/sources_1'.
+WARNING: [filemgmt 56-2] IPUserFilesDir: Could not find the directory 'D:/DE1_projekt/Parking_sensor/Parking_sensor.ip_user_files', nor could it be found using path 'D:/Users/vitja/Documents/GitHub/DE1_projekt/DE1_projekt/Parking_sensor/Parking_sensor.ip_user_files'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/downland_vivado/Vivado/2020.2/data/ip'.
+INFO: [IP_Flow 19-2338] Canceling the changes to the IP catalog. Reverting the catalog back to its previous state.
+INFO: [IP_Flow 19-2340] The IP catalog has been returned to its previous state.
+INFO: [Common 17-344] 'open_project' was cancelled
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Apr 13 10:58:52 2021...
