@@ -3,8 +3,6 @@
   <File Type="PA-TCL" Name="ledbar.tcl"/>
   <File Type="REPORTS-TCL" Name="ledbar_reports.tcl"/>
   <File Type="RDS-RDS" Name="ledbar.vds"/>
-  <File Type="RDS-UTIL" Name="ledbar_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="ledbar_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="ledbar.dcp"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
