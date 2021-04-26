@@ -34,9 +34,7 @@ use IEEE.NUMERIC_STD.ALL;
 entity tb_sonar is
 --  Port ( );
 end tb_sonar;
-
 architecture Behavioral of tb_sonar is
-
     constant c_CLK_100MHZ_PERIOD : time := 10 ns;
 
     signal s_clk : std_logic;
@@ -45,7 +43,6 @@ architecture Behavioral of tb_sonar is
     signal s_cm1 : unsigned(3 downto 0);
     signal s_cm0 : unsigned(3 downto 0);
 begin
-
     uut_ce : entity work.sonar
         port map(
         clk => s_clk,
@@ -54,7 +51,6 @@ begin
         cm1 => s_cm1,
         cm0 => s_cm0
         );
-
     p_clk_gen : process
     begin
      while now < 10000 ns loop   -- 10 usec of simulation
@@ -65,5 +61,4 @@ begin
         end loop;
      wait;   
     end process p_clk_gen; 
-    
 end Behavioral;

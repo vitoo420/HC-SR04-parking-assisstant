@@ -59,6 +59,5 @@ begin
             echoPrev := echoCurrent;
             echoCurrent := echo;
         end if;      
-    end process;
-     
+    end process; 
 end sonar_arch;
