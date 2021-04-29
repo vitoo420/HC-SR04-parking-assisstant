@@ -1,10 +1,10 @@
 # Parking assistant with HC-SR04 ultrasonic sensor, sound signaling using PWM, signaling by LED bargraph.
 
 ## Team members
-Jančošek Matúš
-Jančová Silvie
-Jánoš Vít
-Jarabý Šimon
+# Jančošek Matúš
+# Jančová Silvie
+# Jánoš Vít
+# Jarabý Šimon
 
 ### Link to GitHub project folder: https://github.com/vitoo420/DE1_projekt
 
