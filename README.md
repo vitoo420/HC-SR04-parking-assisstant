@@ -15,7 +15,7 @@
 
 ## Hardware description
 
-Write your text here.
+![Images](.png)
 
 
 ## VHDL modules description and simulations
