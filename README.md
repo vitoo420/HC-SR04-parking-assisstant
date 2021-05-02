@@ -81,7 +81,7 @@ Write your text here.
 
 ## Video
 
-*Write your text here*
+[![Project Video](http://img.youtube.com/vi/3xFRkxmYkFs/0.jpg)](http://www.youtube.com/wa "Project Overview")
 
 
 ## References
