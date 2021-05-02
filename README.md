@@ -9,8 +9,7 @@
 Link to GitHub project folder: https://github.com/vitoo420/DE1_projekt
 
 ## Project objectives
-Main objective of this projekt was to create funcional parking assistant using an Arty A7: Artix-7 FPGA Development board. To achive this goal we used HC-SR04 ultrasonic sensor as input for measuring the distance between two objekts. We used buzzer and LED bargraph as outputs for signaling measured distance to the user . We were also thinking about displaying the distance on 7-segment display for more accurate measuring. But more on that later.  
-### 
+Main objective of this projekt was to create funcional parking assistant using an Arty A7: Artix-7 FPGA Development board. To achive this goal we used HC-SR04 ultrasonic sensor as input for measuring the distance between two objekts. We used buzzer and LED bargraph as outputs for signaling measured distance to the user . We were also thinking about displaying the distance on 7-segment display for more accurate measuring. But more on that later. 
 
 
 ## Hardware description
@@ -18,12 +17,28 @@ Hardware used in this project:
 * Arty A7-100T board 
 * HC-SR04 ultrasonic sensor
 * LED bargraph
-* Custom 4 Digit 7 segment module
+* 4 Digit 7 segment module
 
 ### Arty A7: Artix-7 FPGA Development Board
 The Arty boards are designed with versatility and flexibility in mind.
+
 ####  ![Arty A7 Board](Images/Board1.png)
 
+
+
+#### Table with pinouts for used modules
+
+##### Table for 7 seg 4 digits module 
+| Pmod JB | Connection | Cathodes | Pmod JC | Connection | Anodes |
+| :-----: | :--------: | :------: | :-----: | :--------: | :----: |
+|  Pin 1  |    E15     |    CA    |  Pin 1  |    U12     |  AN0   |
+|  Pin 2  |    E16     |    CB    |  Pin 2  |    V12     |  AN1   |
+|  Pin 3  |    D15     |    CC    |  Pin 3  |    V10     |  AN2   |
+|  Pin 4  |    C15     |    CD    |  Pin 4  |    V11     |  AN3   |
+|  Pin 7  |    J17     |    CE    |  Pin 7  |    U14     |   -    |
+|  Pin 8  |    J18     |    CF    |  Pin 8  |    V14     |   -    |
+|  Pin 9  |    K15     |    CG    |  Pin 9  |    T13     |   -    |
+| Pin 10  |    J15     |    DP    | Pin 10  |    U13     |   -    |
 
 
 
@@ -59,6 +74,8 @@ This section contains the specifications and why they are important to the senso
 #### *HC-SR04 Timing Chart and Pin Explanations*
 
 The HC­SR04 has four pins, VCC, GND, TRIG and ECHO; these pins all have different functions. The VCC and GND pins are the simplest ­­ they power the HC­SR04. These pins need to be attached to a +5 volt source and ground respectively. There is a single control pin: the TRIG pin. The TRIG pin is responsible for sending the ultrasonic burst. This pin should be set to HIGH for 10 μs, at which point the HC­SR04 will send out an eight cycle sonic burst at 40 kHZ. After a sonic burst has been sent the ECHO pin will go HIGH. The ECHO pin is the data pin ­­ it is used in taking distance measurements. After an ultrasonic burst is sent the pin will go HIGH, it will stay high until an ultrasonic burst is detected back, at which point it will go LOW. Taking Distance Measurements The HC­SR04 can be triggered to send out an ultrasonic burst by setting the TRIG pin to HIGH. Once the burst is sent the ECHO pin will automatically go HIGH. This pin will remain HIGH until the the burst hits the sensor again. You can calculate the distance to the object by keeping track of how long the ECHO pin stays HIGH. The time ECHO stays HIGH is the time the burst spent traveling.  Using this measurement in equation 1 along with the speed of sound will yield the distance travelled. A summary of this is listed below, along with a visual representation in Figure 2.
+
+![Timing](Images/Timing.png)
 
 #### *HC-SR04 Application*
 * Used to avoid and detect obstacles with robots like biped robot, obstacle avoider robot, path finding robot etc.
