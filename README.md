@@ -5,6 +5,7 @@
 * Jančová Silvie
 * Jánoš Vít
 * Jarabý Šimon
+ 
 Link to GitHub project folder: https://github.com/vitoo420/DE1_projekt
 
 ## Project objectives
