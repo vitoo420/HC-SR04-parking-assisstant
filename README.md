@@ -17,18 +17,18 @@
 ### Arty A7: Artix-7 FPGA Development Board
 The Arty boards are designed with versatility and flexibility in mind.
 
-![Images](Board.png)]
+![Images](Board.png)
 
 
 ### Description of HC-SR04 ultrasonic sensor
 
-![Images/Sensor3.png)]
+![Images](Sensor3.png)
 
 First of all we have to understand how the ultrasonic sensors works. Ultrasonic sensors use sound to determine the distance between the sensor and theclosest object in its path. 
 Ultrasonic sensors are essentially sound sensors, but they operate at a frequency above human hearing. The sensor sends out a sound wave at a specific frequency (Original signal). 
 It then listens for that specificsound wave to bounce off of an object and come back (Reflected signal).
 
-![Images(Sensor4.png)]
+![Images(Sensor4.png)
 
 The sensor keeps trackof the time between sending the sound wave and the sound wave returning. 
 If you knowhow fast something is going and how long it is traveling you can find the distancetraveled with equation d=v*t
