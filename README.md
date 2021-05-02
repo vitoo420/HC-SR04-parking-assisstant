@@ -16,7 +16,7 @@
 ## Hardware description
 ### Arty A7: Artix-7 FPGA Development Board
 The Arty boards are designed with versatility and flexibility in mind.
-![Arty A7 Board](Images/Board.png)
+![Arty A7 Board](Images/Board1.png)
 
 
 ### Description of HC-SR04 ultrasonic sensor
