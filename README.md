@@ -22,7 +22,7 @@ The Arty boards are designed with versatility and flexibility in mind.
 
 ### Description of HC-SR04 ultrasonic sensor
 
-![Images](Sensor3.png)]
+![Images/Sensor3.png)]
 
 First of all we have to understand how the ultrasonic sensors works. Ultrasonic sensors use sound to determine the distance between the sensor and theclosest object in its path. 
 Ultrasonic sensors are essentially sound sensors, but they operate at a frequency above human hearing. The sensor sends out a sound wave at a specific frequency (Original signal). 
