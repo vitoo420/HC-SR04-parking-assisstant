@@ -37,7 +37,7 @@ The sensor keeps trackof the time between sending the sound wave and the sound w
 If you knowhow fast something is going and how long it is traveling you can find the distancetraveled with equation d=v*t
 
 #### *HC-SR04 Specifications*
-This section contains the specifications and why they are important to the sensor module. Thesensor modules requirements are as follows.
+This section contains the specifications and why they are important to the sensor module. Thesensor modules requirements are as follows.     
 ● Cost 
 ● Weigh 
 ● Accuracy of object detection
