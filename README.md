@@ -59,7 +59,7 @@ The sensor keeps trackof the time between sending the sound wave and the sound w
 If you knowhow fast something is going and how long it is traveling you can find the distancetraveled with equation d=v*t
 
 #### *HC-SR04 Specifications for this projekt*
-This section contains the specifications and why they are important to the sensor module. Thesensor modules requirements are as follows. Cost, Weigh, Accuracy of object detection. 
+This section contains the specifications and why they are important to the sensor module. The sensor modules requirements are as follows. Cost, Weigh, Accuracy of object detection. Cost of modules is most important aspect for every new product. It is basic factor in designing the product. Next one is weight because we want out divice to be  simple, light and over all practical. For that we will also need precision and accuracy. 
 
 #### *HC-SR04 Electric Parameter*
 * Working Voltage is DC 5 V
@@ -83,6 +83,11 @@ To interpret the time reading into a distance you need to change equation 1. The
 ![Timing](Images/rovnica.png)
 
 ![Timing](Images/Timing.png)
+
+
+### Buzzer
+
+### LED bargraph
 
 
 ## Imagine of all modules connected to Arty A7: Artix-7 FPGA Development Board
