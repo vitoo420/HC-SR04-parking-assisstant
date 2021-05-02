@@ -38,9 +38,9 @@ If you knowhow fast something is going and how long it is traveling you can find
 
 #### *HC-SR04 Specifications*
 This section contains the specifications and why they are important to the sensor module. Thesensor modules requirements are as follows.     
-● Cost 
-● Weigh 
-● Accuracy of object detection
+##### ● Cost 
+##### ● Weigh 
+##### ● Accuracy of object detection
 
 #### *HC-SR04 Electric Parameter*
 ● Working Voltage is DC 5 V
