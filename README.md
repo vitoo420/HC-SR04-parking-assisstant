@@ -1,11 +1,11 @@
 # Parking assistant with HC-SR04 ultrasonic sensor, sound signaling using PWM, signaling by LED bargraph.
 
 ## Team members
-#### Jančošek Matúš
-#### Jančová Silvie
-#### Jánoš Vít
-#### Jarabý Šimon
-#### Link to GitHub project folder: https://github.com/vitoo420/DE1_projekt
+* Jančošek Matúš
+* Jančová Silvie
+* Jánoš Vít
+* Jarabý Šimon
+* Link to GitHub project folder: https://github.com/vitoo420/DE1_projekt
 
 ## Project objectives
 
@@ -40,14 +40,14 @@ If you knowhow fast something is going and how long it is traveling you can find
 This section contains the specifications and why they are important to the sensor module. Thesensor modules requirements are as follows. Cost, Weigh, Accuracy of object detection. 
 
 #### *HC-SR04 Electric Parameter*
-##### ● Working Voltage is DC 5 V
-##### ● Working Current is 15mA
-##### ● Working Frequency is 40Hz
-##### ● Max/Min Range 400cm/2cm
-##### ● MeasuringAngle is 15 degree
-##### ● Trigger Input Signal 10uS TTL pulse
-##### ● Echo Output Signal Input TTL lever signal and the range in proportion
-##### ● Dimension of board are 45*20*15mm 
+* ● Working Voltage is DC 5 V
+* ● Working Current is 15mA
+* ● Working Frequency is 40Hz
+* ● Max/Min Range 400cm/2cm
+* ● MeasuringAngle is 15 degree
+* ● Trigger Input Signal 10uS TTL pulse
+* ● Echo Output Signal Input TTL lever signal and the range in proportion
+* ● Dimension of board are 45*20*15mm 
 
 #### *HC-SR04 Timing Chart and Pin Explanations*
 
