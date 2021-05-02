@@ -13,6 +13,12 @@
 
 
 ## Hardware description
+Hardware used in this project:
+* Arty A7-100T board 
+* HC-SR04 ultrasonic sensor
+* LED bargraph
+* Custom 4 Digit 7 segment module
+
 ### Arty A7: Artix-7 FPGA Development Board
 The Arty boards are designed with versatility and flexibility in mind.
 ####  ![Arty A7 Board](Images/Board1.png)
