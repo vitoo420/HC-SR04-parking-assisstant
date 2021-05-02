@@ -105,6 +105,5 @@ Write your text here.
 
 
 ## References
-
-   https://cdn.sparkfun.com/datasheets/Sensors/Proximity/HCSR04.pdf
-   https://datasheetspdf.com/pdf-file/1380136/ETC/HC-SR04/1
+https://cdn.sparkfun.com/datasheets/Sensors/Proximity/HCSR04.pdf
+https://datasheetspdf.com/pdf-file/1380136/ETC/HC-SR04/1
