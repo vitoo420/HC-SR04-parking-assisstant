@@ -66,8 +66,8 @@ The HC­SR04 has four pins, VCC, GND, TRIG and ECHO; these pins all have differ
 * Can be used to map the objects surrounding the sensor by rotating it
 * Depth of certain places like wells, pits etc can be measured since the waves can penetrate through wate
 
-
-
+## Imagine of all modules connected to Arty A7: Artix-7 FPGA Development Board
+![Arty A7 Board](Images/Bloková schéma wired + added funcionality 1.png)
 
 ## VHDL modules description and simulations
 
