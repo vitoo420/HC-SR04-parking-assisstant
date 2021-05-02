@@ -36,21 +36,21 @@ It then listens for that specificsound wave to bounce off of an object and come 
 The sensor keeps trackof the time between sending the sound wave and the sound wave returning. 
 If you knowhow fast something is going and how long it is traveling you can find the distancetraveled with equation d=v*t
 
-#### *HC-SR04 Specifications*
-This section contains the specifications and why they are important to the sensor module. Thesensor modules requirements are as follows.     
-##### ● Cost 
-##### ● Weigh 
-##### ● Accuracy of object detection
+#### *HC-SR04 Specifications for this projekt*
+This section contains the specifications and why they are important to the sensor module. Thesensor modules requirements are as follows. Cost, Weigh, Accuracy of object detection. 
 
 #### *HC-SR04 Electric Parameter*
-● Working Voltage is DC 5 V
-● Working Current is 15mA
-● Working Frequency is 40Hz
-● Max/Min Range 400cm/2cm
-● MeasuringAngle is 15 degree
-● Trigger Input Signal 10uS TTL pulse
-● Echo Output Signal Input TTL lever signal and the range in proportion
-● Dimension of board are 45*20*15mm 
+##### ● Working Voltage is DC 5 V
+##### ● Working Current is 15mA
+##### ● Working Frequency is 40Hz
+##### ● Max/Min Range 400cm/2cm
+##### ● MeasuringAngle is 15 degree
+##### ● Trigger Input Signal 10uS TTL pulse
+##### ● Echo Output Signal Input TTL lever signal and the range in proportion
+##### ● Dimension of board are 45*20*15mm 
+
+#### *HC-SR04 Timing Chart and Pin Explanations*
+
 
 #### *HC-SR04 Application*
 ● Used to avoid and detect obstacles with robots like biped robot, obstacle avoider robot, path finding robot etc.
