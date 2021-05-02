@@ -5,7 +5,6 @@
 #### Jančová Silvie
 #### Jánoš Vít
 #### Jarabý Šimon
-
 #### Link to GitHub project folder: https://github.com/vitoo420/DE1_projekt
 
 ## Project objectives
@@ -19,7 +18,12 @@ The Arty boards are designed with versatility and flexibility in mind.
 ####  ![Arty A7 Board](Images/Board1.png)
 
 
-### Description of HC-SR04 ultrasonic sensor
+
+
+
+
+### HC-SR04 ultrasonic sensor
+#### *Description of HC-SR04 ultrasonic sensor*
 
 ![HC-SR04](Images/Sensor3.png)
 
@@ -32,21 +36,27 @@ It then listens for that specificsound wave to bounce off of an object and come 
 The sensor keeps trackof the time between sending the sound wave and the sound wave returning. 
 If you knowhow fast something is going and how long it is traveling you can find the distancetraveled with equation d=v*t
 
-#### HC­SR04 Specifications
+#### *HC-SR04 Specifications*
 This section contains the specifications and why they are important to the sensor module. Thesensor modules requirements are as follows.
-●Cost ●Weigh ●Accuracy of object detection
+● Cost 
+● Weigh 
+● Accuracy of object detection
 
-Working Voltage is DC 5 V
-Working Current is 15mA
-Working Frequency is 40Hz
-Max Range 4m
-Min Range 2cm
-MeasuringAngle is 15 degree
-Trigger Input Signal 10uS TTL pulse
-Echo Output Signal Input TTL lever signal and the range in
-proportion
-Dimension of board are 45*20*15mm 
+#### *HC-SR04 Electric Parameter*
+● Working Voltage is DC 5 V
+● Working Current is 15mA
+● Working Frequency is 40Hz
+● Max/Min Range 400cm/2cm
+● MeasuringAngle is 15 degree
+● Trigger Input Signal 10uS TTL pulse
+● Echo Output Signal Input TTL lever signal and the range in proportion
+● Dimension of board are 45*20*15mm 
 
+#### *HC-SR04 Application*
+● Used to avoid and detect obstacles with robots like biped robot, obstacle avoider robot, path finding robot etc.
+● Used to measure the distance within a wide range of 2cm to 400cm
+● Can be used to map the objects surrounding the sensor by rotating it
+● Depth of certain places like wells, pits etc can be measured since the waves can penetrate through wate
 
 
 
