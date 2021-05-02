@@ -107,7 +107,7 @@ Write your text here.
 
 ## Video
 
-[![Project Video](http://img.youtube.com/vi/3xFRkxmYkFs/0.jpg)](http://www.youtube.com/wa "Project Overview")
+**[![Project Video](http://img.youtube.com/vi/3xFRkxmYkFs/0.jpg)](http://www.youtube.com/wa "Project Overview")**
 
 
 ## References
