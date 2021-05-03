@@ -91,7 +91,7 @@ The HC-SR04 has four pins VCC, GND, TRIG and ECHO. The VCC and GND pins are the 
 Taking distance measurements with HC-SR04 can be triggered to send out an ultrasonic burst by setting the TRIG pin to HIGH. Once the burst is sent the ECHO pin will automatically go HIGH. This pin will remain HIGH until the the burst hits the sensor again. You can calculate the distance to the object by keeping track of how long the ECHO pin stays HIGH. The time ECHO stays HIGH is the time the burst spent traveling.  Using this measurement in equation 1 along with the speed of sound will yield the distance travelled. A summary of this is listed below, along with a visual representation.
 
 <p align="center" width="100%">
-    <img width="50%" src="Images/Timing.png"> 
+    <img width="70%" src="Images/Timing.png"> 
 </p>
 
 
