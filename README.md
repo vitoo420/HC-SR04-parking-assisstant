@@ -33,7 +33,7 @@ There are two variants of the Arty A7:
 
 
   <p align="center" width="100%">
-      <img width="70%" src="Images/Board1.png"> 
+      <img width="50%" src="Images/Board1.png"> 
 </p>
 
 
