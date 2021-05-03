@@ -40,7 +40,6 @@ There are two variants of the Arty A7:
 
 #### *PinOut of Pmod Connectors on Arty A7-100T board*
 
-![Pins]
   <p align="center" width="100%">
   <img width="50%" src="Images/pins.png"> 
   </p>
