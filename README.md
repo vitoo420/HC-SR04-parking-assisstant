@@ -6,7 +6,7 @@
 * Jánoš Vít
 * Jarabý Šimon
  
-Link to GitHub project folder: https://github.com/vitoo420/DE1_projekt
+Link to GitHub project folder: [ ](https://github.com/vitoo420/DE1_projekt)
 
 ## Project objectives
 Main objective of this projekt was to create funcional parking assistant using an Arty A7: Artix-7 FPGA Development board. To achive this intention we used HC-SR04 ultrasonic sensor as input for measuring the distance between two objekts. We used buzzer and LED bargraph as outputs for signaling measured distance to the user . We had been additionally considering displaying the distance on 7-segment display for more accurate measuring. But more on that later. 
