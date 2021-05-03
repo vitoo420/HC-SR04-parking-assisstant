@@ -65,7 +65,9 @@ There are two variants of the Arty A7:
 ### HC-SR04 ultrasonic sensor
 #### *Description of HC-SR04 ultrasonic sensor*
 
-![HC-SR04](Images/Sensor3.png)
+ <p align="center" width="100%">
+  <img width="50%" src="Images/Sensor3.png"> 
+  </p>
 
 First of all we have to understand how the ultrasonic sensors works. Ultrasonic sensors use sound to determine the distance between the sensor and theclosest object in its path. 
 Ultrasonic sensors are essentially sound sensors, however they perform at a frequency above human hearing. The sensor sends out a sound wave at a selected frequency (Original signal). 
