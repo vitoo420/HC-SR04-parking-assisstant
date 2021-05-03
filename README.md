@@ -122,6 +122,8 @@ To interpret the time reading into a distance you need to change the first equat
     <img width="33%" src="Images/LED.jpg"> 
 </p>
 
+#### *Internal circuit diagram*
+
 <p align="center" width="100%">
     <img width="33%" src="Images/LED1.png"> 
 </p>
