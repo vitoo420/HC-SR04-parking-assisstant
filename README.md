@@ -149,6 +149,11 @@ LED Bar Graph is an LED array, which is used to connect with electronic circuit 
 
 [Link to LED bargraph on Amazon ](https://www.amazon.com/Single-Segment-Display-Colors-Arduino/dp/B07BJ8ZGP7#descriptionAndDetails)
 
+### 4 Digit 7 segment module
+
+#### 
+
+
 ## Imagine of block structure design
 <p align="center" width="100%">
     <img width="70%" src="Images/Blok.png"> 
