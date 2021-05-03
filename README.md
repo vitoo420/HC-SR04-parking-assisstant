@@ -20,8 +20,13 @@ Hardware used in this project:
 * 4 Digit 7 segment module
 
 ### Arty A7: Artix-7 FPGA Development Board
-The Arty boards are designed with versatility and flexibility in mind.
+The Arty boards are designed with versatility and flexibility in mind. With universally popular Arduino™ headers and multiple Pmod™ ports, an Arty will be the most adaptable FPGA/SoC board in your toolbox. 
 
+The Arty A7 is a ready-to-use development platform designed around the Xilinx Artix-7 FPGA family. With the Artix-7 devices, the Arty A7 board provides the highest performance-per-watt fabric, transceiver line rates, DSP processing, and AMS integration in the Arty family. With the MicroBlaze Soft Processor Core from Xilinx, you can create embedded applications with a variety of peripherals, memory, and interfaces.
+
+The Arty A7 is supported by Xilinx's Vivado Design Suite, including the free WebPACK version. You can also leverage the Vitis Core Development Kit or Xilinx Software Development Kit to start developing for the MicroBlaze processor with no prior FPGA experience.
+
+There are two variants of the Arty A7: The Arty A7-35T features the XC7A35TICSG324-1L, and the Arty A7-100T features the larger XC7A100TCSG324-1.
 ####  ![Arty A7 Board](Images/Board1.png)
 
 
