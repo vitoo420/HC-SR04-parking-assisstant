@@ -13,7 +13,7 @@ Main objective of this projekt was to create funcional parking assistant using a
 
 
 ## Hardware description
-Hardware used in this project:
+#### *Hardware used in this project:*
 * Arty A7-100T board 
 * HC-SR04 ultrasonic sensor
 * LED bargraph
