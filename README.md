@@ -135,7 +135,7 @@ To interpret the time reading into a distance you need to change the first equat
 ## Imagine of all modules connected to Arty A7: Artix-7 FPGA Development Board
 
 <p align="center" width="100%">
-    <img width="70%" src="Images/Blok1.png"> 
+    <img width="100%" src="Images/Blok1.png"> 
 </p>
 
 ## Table with pinouts for used modules
