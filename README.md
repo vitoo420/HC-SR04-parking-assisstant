@@ -122,6 +122,10 @@ To interpret the time reading into a distance you need to change the first equat
     <img width="33%" src="Images/LED.jpg"> 
 </p>
 
+<p align="center" width="100%">
+    <img width="33%" src="Images/LED1.png"> 
+</p>
+
 
 
 [Link to LED bargraph on Amazon ](https://www.amazon.com/Single-Segment-Display-Colors-Arduino/dp/B07BJ8ZGP7#descriptionAndDetails)
