@@ -121,13 +121,27 @@ To interpret the time reading into a distance you need to change the first equat
 <p align="center" width="100%">
     <img width="33%" src="Images/LED.jpg"> 
 </p>
+#### *Pin configuration+
 
-#### *Internal circuit diagram*
+| Pin No.| Pin Name | Description |
+| :-: | :-: | :-: |
+ | 1 to 10 | Anode | All are anode pins of the respected LED | 
+| 11 to 20 | Cathode | All are cathode pins of the respected LED | 
+
+#### *Internal circuit diagram + pinout*
 
 <p align="center" width="100%">
     <img width="33%" src="Images/LED1.png"> 
 </p>
 
+#### *LED bargraph Electric Parameter*
+* Forward Current: 20mA
+* Forward Voltage: 2.0V to 2.2V (maximum)
+* Luminous Intensity: 60mcd
+* Wavelength: 630nm
+* Operating Temperature: -25℃ to 85℃
+* Storage Temperature: -30℃ to 85℃
+* Soldering Temperature: 260℃ for 5sec.
 
 
 [Link to LED bargraph on Amazon ](https://www.amazon.com/Single-Segment-Display-Colors-Arduino/dp/B07BJ8ZGP7#descriptionAndDetails)
@@ -146,26 +160,6 @@ To interpret the time reading into a distance you need to change the first equat
 
 ## Table with pinouts for used modules
 
-| Pin No.| Pin Name | Description |
-| :-: | :-: | :-: |
- | 1 to 10 | Anode | All are anode pins of the respected LED | 
-| 11 to 20 | Cathode | All are cathode pins of the respected LED | 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #### Table for HC-SR04 sensor
 | Sensor Pin | Board Pin |
 | :-: | :-: | 
@@ -173,6 +167,10 @@ To interpret the time reading into a distance you need to change the first equat
 | Trig | D4 | 
 | Echo | G13 | 
 | GND | GND | 
+
+#### Table for LED Bargraph
+
+
 
 #### Table for 7 seg 4 digits module 
 | Pmod JB | Connection | Cathodes | Pmod JC | Connection | Anodes |
