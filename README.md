@@ -146,6 +146,26 @@ To interpret the time reading into a distance you need to change the first equat
 
 ## Table with pinouts for used modules
 
+| Pin No.| Pin Name | Description |
+| :-: | :-: | :-: |
+ | 1 to 10 | Anode | All are anode pins of the respected LED | 
+| 11 to 20 | Cathode | All are cathode pins of the respected LED | 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #### Table for HC-SR04 sensor
 | Sensor Pin | Board Pin |
 | :-: | :-: | 
@@ -194,3 +214,4 @@ Write your text here.
 * http://randomnerdtutorials.com/complete-guide-for-ultrasonic-sensor-hc-sr04/
 * http://www.ezdenki.com/ultrasonic.php
 * http://www.elecrow.com/hcsr04-ultrasonic-ranging-sensor-p-316.html(^ this one has some cool charts)
+* https://components101.com/displays/led-bar-graph
