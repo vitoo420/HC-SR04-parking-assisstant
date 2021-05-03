@@ -9,7 +9,7 @@
 Link to GitHub project folder: https://github.com/vitoo420/DE1_projekt
 
 ## Project objectives
-Main objective of this projekt was to create funcional parking assistant using an Arty A7: Artix-7 FPGA Development board. To achive this goal we used HC-SR04 ultrasonic sensor as input for measuring the distance between two objekts. We used buzzer and LED bargraph as outputs for signaling measured distance to the user . We were also thinking about displaying the distance on 7-segment display for more accurate measuring. But more on that later. 
+Main objective of this projekt was to create funcional parking assistant using an Arty A7: Artix-7 FPGA Development board. To achive this intention we used HC-SR04 ultrasonic sensor as input for measuring the distance between two objekts. We used buzzer and LED bargraph as outputs for signaling measured distance to the user . We had been additionally considering displaying the distance on 7-segment display for more accurate measuring. But more on that later. 
 
 
 ## Hardware description
@@ -50,13 +50,13 @@ The Arty boards are designed with versatility and flexibility in mind.
 ![HC-SR04](Images/Sensor3.png)
 
 First of all we have to understand how the ultrasonic sensors works. Ultrasonic sensors use sound to determine the distance between the sensor and theclosest object in its path. 
-Ultrasonic sensors are essentially sound sensors, but they operate at a frequency above human hearing. The sensor sends out a sound wave at a specific frequency (Original signal). 
+Ultrasonic sensors are essentially sound sensors, however they perform at a frequency above human hearing. The sensor sends out a sound wave at a selected frequency (Original signal). 
 It then listens for that specificsound wave to bounce off of an object and come back (Reflected signal).
 
 ![HC-SR04](Images/Sensor4.png)
 
-The sensor keeps trackof the time between sending the sound wave and the sound wave returning. 
-If you knowhow fast something is going and how long it is traveling you can find the distancetraveled with equation d=v*t
+The sensor maintains track of the time between sending the sound wave and the sound wave returning. 
+If you know how fast something is going and how long it is traveling you can find the distancetraveled with equation d=v*t
 
 #### *HC-SR04 Specifications for this projekt*
 This section contains the specifications and why they are important to the sensor module. The sensor modules requirements are as follows. Cost, Weigh, Accuracy of object detection. Cost of modules is most important aspect for every new product. It is basic factor in designing the product. Next one is weight because we want out divice to be  simple, light and over all practical. For that we will also need precision and accuracy. 
