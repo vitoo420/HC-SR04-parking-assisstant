@@ -37,7 +37,7 @@ There are two variants of the Arty A7:
 
 #### *Pins from board*
 
-![Pins](images/pins.png)
+![Pins](Images/pins.png)
 
 ####  *Board connection table*
 
