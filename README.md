@@ -90,6 +90,7 @@ To interpret the time reading into a distance you need to change the first equat
 ### Buzzer
 
 ### LED bargraph
+![Modules](Images/LED.png)
 ## Imagine of block structure design
 ![Modules](Images/Blok.png)
 ## Imagine of all modules connected to Arty A7: Artix-7 FPGA Development Board
