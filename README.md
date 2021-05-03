@@ -107,6 +107,9 @@ To interpret the time reading into a distance you need to change the first equat
 
 ### LED bargraph
 ![Modules](Images/LED.jpg)
+
+[Link to LED bargraph on Amazon ](https://www.amazon.com/Single-Segment-Display-Colors-Arduino/dp/B07BJ8ZGP7#descriptionAndDetails)
+
 ## Imagine of block structure design
 ![Modules](Images/Blok.png)
 ## Imagine of all modules connected to Arty A7: Artix-7 FPGA Development Board
