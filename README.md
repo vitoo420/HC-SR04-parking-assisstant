@@ -17,6 +17,7 @@ Hardware used in this project:
 * Arty A7-100T board 
 * HC-SR04 ultrasonic sensor
 * LED bargraph
+* Buzzer
 * 4 Digit 7 segment module
 
 ### Arty A7: Artix-7 FPGA Development Board
