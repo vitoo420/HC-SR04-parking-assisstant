@@ -45,7 +45,7 @@ There are two variants of the Arty A7:
   </p>
   
 ####  *Pmod Connector table*
-
+  
 |  | Pmod JA | Pmod JB | Pmod JC | Pmod JD |
 | :-: | :-: | :-: | :-: | :-: |
 | Pmod Type | Standard | High-Speed | High-Speed | Standard |
