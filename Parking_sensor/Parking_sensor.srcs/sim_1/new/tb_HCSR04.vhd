@@ -61,4 +61,14 @@ begin
         end loop;
      wait;   
     end process p_clk_gen; 
+    
+    p_echo : process
+    begin
+    wait for 120 ns;
+    s_echo <= '1';
+    wait for 158 ns;
+    s_echo <= '0';
+    wait;
+    end process p_echo; 
+    
 end Behavioral;

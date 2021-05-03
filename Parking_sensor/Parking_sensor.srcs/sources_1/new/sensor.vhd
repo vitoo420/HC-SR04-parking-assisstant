@@ -32,9 +32,9 @@ begin
                 end if; 
             else -- stop sending trig, do the calculation (5800 clk cycle = 1cm)(count enters here as 0)
                 if echo = '1' then -- we can start calculating the width of the echo
-                    if count = 5799 then--we measuered 1 cm
+                    if count = 10 then --5799 then--we measuered 1 cm
                         if tmpcm0 = "1001" then
-                            if tmpcm1 = "1001" then
+                           if tmpcm1 = "1001" then
                                 sendTrig := '1';--max distance to be measured(100 cm), stop measuring, re-send the trig(also update the output)
                                 cm0 <= tmpcm0;
                                 cm1 <= tmpcm1;
