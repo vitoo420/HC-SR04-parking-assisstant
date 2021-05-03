@@ -83,7 +83,7 @@ If you know how fast something is going and how long it is traveling you can fin
 #### *HC-SR04 Specifications for this project*
 This section contains the specifications and why they are important to the sensor module. The sensor modules requirements are as follows. Cost, Weigh, Accuracy of object detection. Cost of modules is most important aspect for every new product. It is basic factor in designing the product. Next one is weight because we want out divice to be  simple, light and over all practical. For that we will also need precision and accuracy. 
 
-#### *HC-SR04 Electric Parameter*
+#### *HC-SR04 Electric parameters*
 * Working Voltage is DC 5 V
 * Working Current is 15mA
 * Working Frequency is 40Hz
@@ -116,26 +116,28 @@ To interpret the time reading into a distance you need to change the first equat
 
 ### Buzzer
 
-### LED bargraph
+### LED Bar Graph
+
+LED Bar Graph is an LED array, which is used to connect with electronic circuit or microcontroller. It’s easy to connect LED bar graph with the circuit like as connecting 10 individual LEDs with 10 output pins. Generally we can use the LED bar graph as a Battery level Indicator, Audio equipments, and Industrial Control panels. There are many other applications of LED bar graphs.
 
 <p align="center" width="100%">
     <img width="33%" src="Images/LED.jpg"> 
 </p>
 
-#### *Pin configuration*
+#### * LED Bar Graph Pin configuration*
 
 | Pin No.| Pin Name | Description |
 | :-: | :-: | :-: |
  | 1 to 10 | Anode | All are anode pins of the respected LED | 
 | 11 to 20 | Cathode | All are cathode pins of the respected LED | 
 
-#### *Internal circuit diagram + pinout*
+#### * LED Bar Graph Internal circuit diagram + pinout*
 
 <p align="center" width="100%">
     <img width="33%" src="Images/LED1.png"> 
 </p>
 
-#### *LED bargraph Electric Parameter*
+#### * LED Bar Graph Electric parameters*
 * Forward Current: 20mA
 * Forward Voltage: 2.0V to 2.2V (maximum)
 * Luminous Intensity: 60mcd
