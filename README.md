@@ -33,15 +33,18 @@ There are two variants of the Arty A7:
 
 
   <p align="center" width="100%">
-      <img width="50%" src="Images/Board1.png"> 
-</p>
+  <img width="50%" src="Images/Board1.png"> 
+  </p>
 
 
 
 #### *PinOut of Pmod Connectors on Arty A7-100T board*
 
-![Pins](Images/pins.png)
-
+![Pins]
+  <p align="center" width="100%">
+  <img width="50%" src="Images/pins.png"> 
+  </p>
+  
 ####  *Pmod Connector table*
 
 |  | Pmod JA | Pmod JB | Pmod JC | Pmod JD |
