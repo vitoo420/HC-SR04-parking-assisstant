@@ -73,7 +73,9 @@ First of all we have to understand how the ultrasonic sensors works. Ultrasonic 
 Ultrasonic sensors are essentially sound sensors, however they perform at a frequency above human hearing. The sensor sends out a sound wave at a selected frequency (Original signal). 
 It then listens for that specificsound wave to bounce off of an object and come back (Reflected signal).
 
-![HC-SR04](Images/Sensor4.png)
+<p align="center" width="100%">
+  <img width="50%" src="Images/Sensor4.png"> 
+  </p>
 
 The sensor maintains track of the time between sending the sound wave and the sound wave returning. 
 If you know how fast something is going and how long it is traveling you can find the distancetraveled with equation d=v*t
