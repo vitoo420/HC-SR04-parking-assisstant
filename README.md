@@ -35,7 +35,23 @@ There are two variants of the Arty A7:
 ####  ![Arty A7 Board](Images/Board1.png)
 
 
+#### *Pins from board*
 
+![Pins](images/pins.png)
+
+####  *Board connection table*
+
+|  | Pmod JA | Pmod JB | Pmod JC | Pmod JD |
+| :-: | :-: | :-: | :-: | :-: |
+| Pmod Type | Standard | High-Speed | High-Speed | Standard |
+| Pin 1 | G13 | E15 | U12 | D4 |
+| Pin 2 | B11 | E16 | V12 | D3 |
+| Pin 3 | A11 | D15 | V10 | F4 |
+| Pin 4 | D12 | C15 | V11 | F3 |
+| Pin 7 | D13 | J17 | U14 | E2 |
+| Pin 8 | B18 | J18 | V14 | D2 |
+| Pin 9 | A18 | K15 | T13 | H2 |
+| Pin 10 | K16 | J15 | U13 | G2 |
 
 
 
