@@ -103,7 +103,9 @@ To interpret the time reading into a distance you need to change the first equat
 
 ### LED bargraph
 <span style="display:block;text-align:center">![Modules](Images/LED.jpg)</span>
-
+<p align="center" width="100%">
+    <img width="33%" src=(Images/LED.jpg)> 
+</p>
 ![Modules](Images/LED.jpg)
 
 
