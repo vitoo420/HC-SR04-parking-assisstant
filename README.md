@@ -35,19 +35,6 @@ There are two variants of the Arty A7:
 
 
 
-#### Table with pinouts for used modules
-
-##### Table for 7 seg 4 digits module 
-| Pmod JB | Connection | Cathodes | Pmod JC | Connection | Anodes |
-| :-----: | :--------: | :------: | :-----: | :--------: | :----: |
-|  Pin 1  |    E15     |    CA    |  Pin 1  |    U12     |  AN0   |
-|  Pin 2  |    E16     |    CB    |  Pin 2  |    V12     |  AN1   |
-|  Pin 3  |    D15     |    CC    |  Pin 3  |    V10     |  AN2   |
-|  Pin 4  |    C15     |    CD    |  Pin 4  |    V11     |  AN3   |
-|  Pin 7  |    J17     |    CE    |  Pin 7  |    U14     |   -    |
-|  Pin 8  |    J18     |    CF    |  Pin 8  |    V14     |   -    |
-|  Pin 9  |    K15     |    CG    |  Pin 9  |    T13     |   -    |
-| Pin 10  |    J15     |    DP    | Pin 10  |    U13     |   -    |
 
 
 
@@ -114,6 +101,22 @@ To interpret the time reading into a distance you need to change the first equat
 ![Modules](Images/Blok.png)
 ## Imagine of all modules connected to Arty A7: Artix-7 FPGA Development Board
 ![Modules](Images/Blok1.png)
+
+## Table with pinouts for used modules
+
+#### Table for 7 seg 4 digits module 
+| Pmod JB | Connection | Cathodes | Pmod JC | Connection | Anodes |
+| :-----: | :--------: | :------: | :-----: | :--------: | :----: |
+|  Pin 1  |    E15     |    CA    |  Pin 1  |    U12     |  AN0   |
+|  Pin 2  |    E16     |    CB    |  Pin 2  |    V12     |  AN1   |
+|  Pin 3  |    D15     |    CC    |  Pin 3  |    V10     |  AN2   |
+|  Pin 4  |    C15     |    CD    |  Pin 4  |    V11     |  AN3   |
+|  Pin 7  |    J17     |    CE    |  Pin 7  |    U14     |   -    |
+|  Pin 8  |    J18     |    CF    |  Pin 8  |    V14     |   -    |
+|  Pin 9  |    K15     |    CG    |  Pin 9  |    T13     |   -    |
+| Pin 10  |    J15     |    DP    | Pin 10  |    U13     |   -    |
+
+
 
 ## VHDL modules description and simulations
 
