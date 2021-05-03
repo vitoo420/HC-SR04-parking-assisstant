@@ -26,7 +26,11 @@ The Arty A7 is a ready-to-use development platform designed around the Xilinx Ar
 
 The Arty A7 is supported by Xilinx's Vivado Design Suite, including the free WebPACK version. You can also leverage the Vitis Core Development Kit or Xilinx Software Development Kit to start developing for the MicroBlaze processor with no prior FPGA experience.
 
-There are two variants of the Arty A7: The Arty A7-35T features the XC7A35TICSG324-1L, and the Arty A7-100T features the larger XC7A100TCSG324-1.
+There are two variants of the Arty A7: 
+* The Arty A7-35T features the XC7A35TICSG324-1L
+* The Arty A7-100T features the larger XC7A100TCSG324-1
+
+
 ####  ![Arty A7 Board](Images/Board1.png)
 
 
