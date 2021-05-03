@@ -91,11 +91,9 @@ The HC-SR04 has four pins VCC, GND, TRIG and ECHO. The VCC and GND pins are the 
 Taking distance measurements with HC-SR04 can be triggered to send out an ultrasonic burst by setting the TRIG pin to HIGH. Once the burst is sent the ECHO pin will automatically go HIGH. This pin will remain HIGH until the the burst hits the sensor again. You can calculate the distance to the object by keeping track of how long the ECHO pin stays HIGH. The time ECHO stays HIGH is the time the burst spent traveling.  Using this measurement in equation 1 along with the speed of sound will yield the distance travelled. A summary of this is listed below, along with a visual representation.
 
 <p align="center" width="100%">
-    <img width="33%" src="Images/Timing.png"> 
+    <img width="50%" src="Images/Timing.png"> 
 </p>
 
-
-![Timing](Images/Timing.png)
 
 To interpret the time reading into a distance you need to change the first equation. The clock on the device you are using will probably count in microseconds or smaller. To useequation 1 the speed of sound needs to determined,which is 343 meters per second atstandard temperature and pressure. To convert this into more useful form use equation 2to change from meters per second to microseconds per centimeter. Then equation 3 canbe used to easily compute the distance in centimeters.
 
