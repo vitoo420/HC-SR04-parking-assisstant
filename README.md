@@ -32,17 +32,17 @@ There are two variants of the Arty A7:
 * The Arty A7-100T features the larger XC7A100TCSG324-1
 
 
-  <p align="center" width="100%">
-  <img width="50%" src="Images/Board1.png"> 
-  </p>
+ <p align="center" width="100%">
+   <img width="50%" src="Images/Board1.png"> 
+ </p>
 
 
 
 #### *PinOut of Pmod Connectors on Arty A7-100T board*
 
-  <p align="center" width="100%">
-  <img width="50%" src="Images/pins.png"> 
-  </p>
+ <p align="center" width="100%">
+    <img width="50%" src="Images/pins.png"> 
+ </p>
   
 ####  *Pmod Connector table*
   
@@ -66,16 +66,16 @@ There are two variants of the Arty A7:
 #### *Description of HC-SR04 ultrasonic sensor*
 
  <p align="center" width="100%">
-  <img width="50%" src="Images/Sensor3.png"> 
-  </p>
+   <img width="50%" src="Images/Sensor3.png"> 
+ </p>
 
 First of all we have to understand how the ultrasonic sensors works. Ultrasonic sensors use sound to determine the distance between the sensor and theclosest object in its path. 
 Ultrasonic sensors are essentially sound sensors, however they perform at a frequency above human hearing. The sensor sends out a sound wave at a selected frequency (Original signal). 
 It then listens for that specificsound wave to bounce off of an object and come back (Reflected signal).
 
 <p align="center" width="100%">
-  <img width="50%" src="Images/Sensor4.png"> 
-  </p>
+   <img width="50%" src="Images/Sensor4.png"> 
+</p>
 
 The sensor maintains track of the time between sending the sound wave and the sound wave returning. 
 If you know how fast something is going and how long it is traveling you can find the distancetraveled with equation d=v*t
@@ -156,7 +156,6 @@ LED Bar Graph is an LED array, which is used to connect with electronic circuit 
 
 
 ## Imagine of all modules connected to Arty A7: Artix-7 FPGA Development Board
-
 <p align="center" width="100%">
     <img width="100%" src="Images/Blok1.png"> 
 </p>
@@ -171,7 +170,14 @@ LED Bar Graph is an LED array, which is used to connect with electronic circuit 
 | Echo | G13 | 
 | GND | GND | 
 
+
+#### Table for Buzzer
+
+
+
+
 #### Table for LED Bargraph
+
 
 
 
