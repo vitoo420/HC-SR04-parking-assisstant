@@ -124,20 +124,20 @@ LED Bar Graph is an LED array, which is used to connect with electronic circuit 
     <img width="33%" src="Images/LED.jpg"> 
 </p>
 
-#### * LED Bar Graph Pin configuration*
+#### *LED Bar Graph Pin configuration*
 
 | Pin No.| Pin Name | Description |
 | :-: | :-: | :-: |
  | 1 to 10 | Anode | All are anode pins of the respected LED | 
 | 11 to 20 | Cathode | All are cathode pins of the respected LED | 
 
-#### * LED Bar Graph Internal circuit diagram + pinout*
+#### *LED Bar Graph Internal circuit diagram + pinout*
 
 <p align="center" width="100%">
     <img width="33%" src="Images/LED1.png"> 
 </p>
 
-#### * LED Bar Graph Electric parameters*
+#### *LED Bar Graph Electric parameters*
 * Forward Current: 20mA
 * Forward Voltage: 2.0V to 2.2V (maximum)
 * Luminous Intensity: 60mcd
