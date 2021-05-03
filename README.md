@@ -120,5 +120,5 @@ Write your text here.
 * http://www.circuitdb.com/?p=1162
 * http://www.micropik.com/PDF/HCSR04.pdf
 * http://randomnerdtutorials.com/complete-guide-for-ultrasonic-sensor-hc-sr04/
-* http://www.ezdenki.com/ultrasonic.php(^fantastic tutorial, explains a lot of stuff)
+* http://www.ezdenki.com/ultrasonic.php
 * http://www.elecrow.com/hcsr04-ultrasonic-ranging-sensor-p-316.html(^ this one has some cool charts)
