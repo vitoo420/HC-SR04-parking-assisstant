@@ -5,7 +5,7 @@
 * Jančová Silvie
 * Jánoš Vít
 * Jarabý Šimon
- 
+
 [Link to GitHub project folder ](https://github.com/vitoo420/DE1_projekt)
 
 ## Project objectives
@@ -43,9 +43,9 @@ There are two variants of the Arty A7:
  <p align="center" width="100%">
     <img width="50%" src="Images/pins.png"> 
  </p>
-  
+
 ####  *Pmod Connector table*
-  
+
 |  | Pmod JA | Pmod JB | Pmod JC | Pmod JD |
 | :-: | :-: | :-: | :-: | :-: |
 | Pmod Type | Standard | High-Speed | High-Speed | Standard |
@@ -128,8 +128,8 @@ LED Bar Graph is an LED array, which is used to connect with electronic circuit 
 
 | Pin No.| Pin Name | Description |
 | :-: | :-: | :-: |
- | 1 to 10 | Anode | All are anode pins of the respected LED | 
-| 11 to 20 | Cathode | All are cathode pins of the respected LED | 
+| 1 to 10 | Anode | All are anode pins of the respected LED |
+| 11 to 20 | Cathode | All are cathode pins of the respected LED |
 
 #### *LED Bar Graph Internal circuit diagram + pinout*
 
@@ -137,7 +137,7 @@ LED Bar Graph is an LED array, which is used to connect with electronic circuit 
     <img width="33%" src="Images/LED1.png"> 
 </p>
 
-#### *LED Bar Graph Electric parameters*
+#### *LED Bar Graph (HDSP-4832) Electric parameters*
 * Forward Current: 20mA
 * Forward Voltage: 2.0V to 2.2V (maximum)
 * Luminous Intensity: 60mcd
@@ -146,8 +146,68 @@ LED Bar Graph is an LED array, which is used to connect with electronic circuit 
 * Storage Temperature: -30℃ to 85℃
 * Soldering Temperature: 260℃ for 5sec.
 
-
 [Link to LED bargraph on Amazon ](https://www.amazon.com/Single-Segment-Display-Colors-Arduino/dp/B07BJ8ZGP7#descriptionAndDetails)
+
+#### *Listing of VHDL code of p_bargraf*
+
+```vhdl
+   p_bargraf  :   process(s_state)
+    begin  
+            case s_state is
+                when st_300 =>
+                    signal_LEDbar <= "00000001"; 
+                    
+                when st_250_300 =>
+                    signal_LEDbar <= "00000011"; 
+ 
+                when st_200_250 =>
+                    signal_LEDbar <= "00000111"; 
+      
+                when st_150_200 =>
+                    signal_LEDbar <= "00001111"; 
+     
+                when st_100_150 =>
+                    signal_LEDbar <= "00011111"; 
+      
+                when st_50_100  =>
+                    signal_LEDbar <= "00111111"; 
+      
+                when st_10_50      =>
+                    signal_LEDbar <= "01111111"; 
+
+                when st_10  =>
+                    signal_LEDbar <= "11111111";
+                         
+            end case;     
+    end process p_bargraf;                        
+```
+
+#### Listing of VHDL code of p_stimulus tb_ledbar
+
+```vhdl
+    p_stimulus : process
+    begin
+        s_distance <= "111111111";
+        wait for 100 ns;
+        s_distance <= "100001110";
+        wait for 100 ns;
+        s_distance <= "011011100";
+        wait for 100 ns;
+        s_distance <= "010101010";
+        wait for 100 ns;
+        s_distance <= "001111000";
+        wait for 100 ns;
+        s_distance <= "001000110";
+        wait for 100 ns;
+        s_distance <= "000010100";
+        wait for 100 ns;
+        s_distance <= "000000000";
+        wait;
+    end process p_stimulus; 
+```
+<p align="center" width="100%">
+    <img width="80%" src="Images/LED_testbench.jpg"> 
+</p>
 
 ### 4 Digit 7 segment module
 
@@ -169,11 +229,11 @@ LED Bar Graph is an LED array, which is used to connect with electronic circuit 
 
 #### Table for HC-SR04 sensor
 | Sensor Pin | Board Pin |
-| :-: | :-: | 
-| VCC | VCC | 
-| Trig | D4 | 
-| Echo | G13 | 
-| GND | GND | 
+| :-: | :-: |
+| VCC | VCC |
+| Trig | D4 |
+| Echo | G13 |
+| GND | GND |
 
 
 #### Table for Buzzer

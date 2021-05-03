@@ -57,7 +57,7 @@ begin
         end if;
     end process p_output_state;
     
-    p_signal  :   process(s_state)
+    p_bargraf  :   process(s_state)
     begin  
             case s_state is
                 when st_300 =>
@@ -85,5 +85,5 @@ begin
                     signal_LEDbar <= "11111111";
                          
             end case;     
-    end process p_signal;
+    end process p_bargraf;
 end architecture Behavioral;
