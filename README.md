@@ -115,6 +115,10 @@ Write your text here.
 
 
 ## References
-https://cdn.sparkfun.com/datasheets/Sensors/Proximity/HCSR04.pdf
-
-https://datasheetspdf.com/pdf-file/1380136/ETC/HC-SR04/1
+* https://cdn.sparkfun.com/datasheets/Sensors/Proximity/HCSR04.pdf
+* https://datasheetspdf.com/pdf-file/1380136/ETC/HC-SR04/1
+* http://www.circuitdb.com/?p=1162
+* http://www.micropik.com/PDF/HCSR04.pdf
+* http://randomnerdtutorials.com/complete-guide-for-ultrasonic-sensor-hc-sr04/
+* http://www.ezdenki.com/ultrasonic.php(^fantastic tutorial, explains a lot of stuff)
+* http://www.elecrow.com/hcsr04-ultrasonic-ranging-sensor-p-316.html(^ this one has some cool charts)
