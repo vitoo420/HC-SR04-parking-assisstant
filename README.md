@@ -121,7 +121,8 @@ To interpret the time reading into a distance you need to change the first equat
 <p align="center" width="100%">
     <img width="33%" src="Images/LED.jpg"> 
 </p>
-#### *Pin configuration+
+
+#### *Pin configuration*
 
 | Pin No.| Pin Name | Description |
 | :-: | :-: | :-: |
