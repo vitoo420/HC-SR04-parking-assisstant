@@ -98,7 +98,7 @@ Taking distance measurements with HC-SR04 can be triggered to send out an ultras
 To interpret the time reading into a distance you need to change the first equation. The clock on the device you are using will probably count in microseconds or smaller. To useequation 1 the speed of sound needs to determined,which is 343 meters per second atstandard temperature and pressure. To convert this into more useful form use equation 2to change from meters per second to microseconds per centimeter. Then equation 3 canbe used to easily compute the distance in centimeters.
 
 <p align="center" width="100%">
-    <img width="70%" src="Images/rovnica.png"> 
+    <img width="33%" src="Images/rovnica.png"> 
 </p>
 
 
