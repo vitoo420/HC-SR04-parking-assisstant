@@ -102,7 +102,12 @@ To interpret the time reading into a distance you need to change the first equat
 ### Buzzer
 
 ### LED bargraph
-![Modules](Images/LED.jpg)
+<p align="center"> 
+<img src="[Modules](Images/LED.jpg)">
+</p>!
+
+
+[Modules](Images/LED.jpg)
 
 [Link to LED bargraph on Amazon ](https://www.amazon.com/Single-Segment-Display-Colors-Arduino/dp/B07BJ8ZGP7#descriptionAndDetails)
 
