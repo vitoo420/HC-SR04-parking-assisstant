@@ -35,11 +35,11 @@ There are two variants of the Arty A7:
 ####  ![Arty A7 Board](Images/Board1.png)
 
 
-#### *Pins from board*
+#### *PinOut of Pmod Connectors on Arty A7-100T board*
 
 ![Pins](Images/pins.png)
 
-####  *Board connection table*
+####  *Pmod Connector table*
 
 |  | Pmod JA | Pmod JB | Pmod JC | Pmod JD |
 | :-: | :-: | :-: | :-: | :-: |
