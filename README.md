@@ -55,7 +55,7 @@ It then listens for that specificsound wave to bounce off of an object and come 
 The sensor maintains track of the time between sending the sound wave and the sound wave returning. 
 If you know how fast something is going and how long it is traveling you can find the distancetraveled with equation d=v*t
 
-#### *HC-SR04 Specifications for this projekt*
+#### *HC-SR04 Specifications for this project*
 This section contains the specifications and why they are important to the sensor module. The sensor modules requirements are as follows. Cost, Weigh, Accuracy of object detection. Cost of modules is most important aspect for every new product. It is basic factor in designing the product. Next one is weight because we want out divice to be  simple, light and over all practical. For that we will also need precision and accuracy. 
 
 #### *HC-SR04 Electric Parameter*
@@ -72,12 +72,7 @@ This section contains the specifications and why they are important to the senso
 
 The HC-SR04 has four pins VCC, GND, TRIG and ECHO. The VCC and GND pins are the simplest because they power the HC-SR04. These pins need to be attached to a +5 voltedge source and ground respectively. The TRIG pin is responsible for sending the ultrasonic burst. This pin should be set to HIGH for 10 μs, at which point the HC-SR04 will send out an eight cycle sonic burst at 40 kHZ. After a sonic burst has been sent the ECHO pin will go HIGH. The ECHO pin is the data pin it is used in taking distance measurements. After an ultrasonic burst is sent the pin will go HIGH, it will stay high until an ultrasonic burst is detected back, at which point it will go LOW. 
 
-| Sensor Pin | Board Pin |
-| :-: | :-: | 
-| VCC | VCC | 
-| Trig | D4 | 
-| Echo | G13 | 
-| GND | GND |
+|
 
 Taking Distance Measurements 
 with HC-SR04 can be triggered to send out an ultrasonic burst by setting the TRIG pin to HIGH. Once the burst is sent the ECHO pin will automatically go HIGH. This pin will remain HIGH until the the burst hits the sensor again. You can calculate the distance to the object by keeping track of how long the ECHO pin stays HIGH. The time ECHO stays HIGH is the time the burst spent traveling.  Using this measurement in equation 1 along with the speed of sound will yield the distance travelled. A summary of this is listed below, along with a visual representation.
@@ -104,6 +99,14 @@ To interpret the time reading into a distance you need to change the first equat
 ![Modules](Images/Blok1.png)
 
 ## Table with pinouts for used modules
+
+#### Table for HC-SR04 sensor
+| Sensor Pin | Board Pin |
+| :-: | :-: | 
+| VCC | VCC | 
+| Trig | D4 | 
+| Echo | G13 | 
+| GND | GND | 
 
 #### Table for 7 seg 4 digits module 
 | Pmod JB | Connection | Cathodes | Pmod JC | Connection | Anodes |
