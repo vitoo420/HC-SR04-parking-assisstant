@@ -113,8 +113,208 @@ To interpret the time reading into a distance you need to change the first equat
 
 
 
-
 ### Buzzer
+
+#### *Listing of VHDL code of architecture at speaker*
+
+```vhdl
+architecture Behavioral of speaker is
+
+    -- Internal clock enable
+    signal s_en     : std_logic;
+    -- Local delay counter
+    signal   s_cnt  : unsigned(4 - 1 downto 0);
+    
+    type t_state is (st_300,
+                     st_250_300,
+                     st_200_250,
+                     st_150_200,
+                     st_100_150,
+                     st_50_100,
+                     st_10_50,
+                     st_10);
+    -- Define the signal that uses different states
+    signal s_state  : t_state;
+
+    -- Specific values for local counter
+    constant c_DELAY_06SEC : unsigned(4 - 1 downto 0) := b"0110";
+    constant c_DELAY_05SEC : unsigned(4 - 1 downto 0) := b"0101";
+    constant c_DELAY_04SEC : unsigned(4 - 1 downto 0) := b"0100";
+    constant c_DELAY_03SEC : unsigned(4 - 1 downto 0) := b"0011";
+    constant c_DELAY_02SEC : unsigned(4 - 1 downto 0) := b"0010";
+    constant c_DELAY_01SEC : unsigned(4 - 1 downto 0) := b"0001";
+    constant c_ZERO        : unsigned(4 - 1 downto 0) := b"0000";
+    
+    
+    
+    
+    
+    
+
+begin
+
+    --------------------------------------------------------------------
+    -- p_output_state:
+    -- Decides about actual state
+    --------------------------------------------------------------------
+    p_output_state : process(distance)
+    begin              
+        if(distance >= "100101100") then                                --greater than 300
+            s_state <= st_300;
+        elsif(distance < "100101100" and distance >= "011111010") then   --between 250 and 300
+            s_state <= st_250_300;
+        elsif(distance < "011111010" and distance >= "011001000") then    --between 200 and 250
+            s_state <= st_200_250;
+        elsif(distance < "011001000" and distance >= "010010110") then    --between 150 and 200
+            s_state <= st_150_200;
+        elsif(distance < "010010110" and distance >= "001100100") then     --between 100 and 150
+            s_state <= st_100_150;
+        elsif(distance < "001100100" and distance >= "000110010") then       --between 50 and 100
+            s_state <= st_50_100;
+        elsif(distance < "000110010" and distance >= "000001010") then          --between 10 and 50                                                     --less than 50
+            s_state <= st_10_50;
+        else
+            s_state <= st_10;
+        end if;
+    end process p_output_state;
+    
+    p_beep  :   process(clk)
+    begin
+        if (rising_edge(clk)) then
+        
+            case s_state is
+                when st_300 =>
+                    beep_switch <= '0';         
+                when st_250_300 =>
+                    if (s_cnt < c_DELAY_06SEC) then
+                        s_cnt <= s_cnt + 1;
+                        beep_switch <= '1';
+                    elsif((s_cnt >= c_DELAY_06SEC) and s_cnt < (2*c_DELAY_06SEC)) then
+                         s_cnt <= s_cnt + 1;
+                         beep_switch <= '0';  
+                    else
+                        s_cnt <= c_ZERO;
+                    end if;      
+                when st_200_250 =>
+                    if (s_cnt < c_DELAY_05SEC) then
+                        s_cnt <= s_cnt + 1;
+                        beep_switch <= '1';
+                    elsif((s_cnt >= c_DELAY_05SEC) and s_cnt < (2*c_DELAY_05SEC)) then
+                         s_cnt <= s_cnt + 1;
+                         beep_switch <= '0';  
+                    else
+                        s_cnt <= c_ZERO;
+                    end if;      
+                when st_150_200 =>
+                    if (s_cnt < c_DELAY_04SEC) then
+                        s_cnt <= s_cnt + 1;
+                        beep_switch <= '1';
+                    elsif((s_cnt >= c_DELAY_04SEC) and s_cnt < (2*c_DELAY_04SEC)) then
+                         s_cnt <= s_cnt + 1;
+                         beep_switch <= '0';  
+                    else
+                        s_cnt <= c_ZERO;
+                    end if;      
+                when st_100_150 =>
+                    if (s_cnt < c_DELAY_03SEC) then
+                        s_cnt <= s_cnt + 1;
+                        beep_switch <= '1';
+                    elsif((s_cnt >= c_DELAY_03SEC) and s_cnt < (2*c_DELAY_03SEC)) then
+                         s_cnt <= s_cnt + 1;
+                         beep_switch <= '0';  
+                    else
+                        s_cnt <= c_ZERO;
+                    end if;      
+                when st_50_100  =>
+                    if (s_cnt < c_DELAY_02SEC) then
+                        s_cnt <= s_cnt + 1;
+                        beep_switch <= '1';
+                    elsif((s_cnt >= c_DELAY_02SEC) and s_cnt < (2*c_DELAY_02SEC)) then
+                         s_cnt <= s_cnt + 1;
+                         beep_switch <= '0';  
+                    else
+                        s_cnt <= c_ZERO;
+                    end if;      
+                when st_10_50      =>
+                    if (s_cnt < c_DELAY_01SEC) then
+                        s_cnt <= s_cnt + 1;
+                        beep_switch <= '1';
+                    elsif((s_cnt >= c_DELAY_01SEC) and s_cnt < (2*c_DELAY_01SEC)) then
+                         s_cnt <= s_cnt + 1;
+                         beep_switch <= '0';  
+                    else
+                        s_cnt <= c_ZERO;
+                    end if; 
+                when st_10  =>
+                    beep_switch <= '1';     
+            end case;  
+        end if;  
+    end process p_beep;
+end architecture Behavioral;
+```
+
+#### Listing of VHDL code of architecture at tb_speaker
+
+```vhdl
+architecture testbench of tb_speaker is
+    -- Local constants
+    constant c_CLK_100MHZ_PERIOD : time := 10 ns;
+
+    --Local signals
+    signal s_clk_100MHz : std_logic;
+    signal s_distance   : std_logic_vector(9-1 downto 0);
+    signal s_beep_switch: std_logic;
+begin
+
+uut_tlc : entity work.speaker
+        port map(
+            clk         => s_clk_100MHz,
+            distance    => s_distance,
+            beep_switch => s_beep_switch
+        );
+
+    --------------------------------------------------------------------
+    -- Clock generation process
+    --------------------------------------------------------------------
+    p_clk_gen : process
+    begin
+        while now < 10000 ns loop   -- 10 usec of simulation
+            s_clk_100MHz <= '0';
+            wait for c_CLK_100MHZ_PERIOD / 2;
+            s_clk_100MHz <= '1';
+            wait for c_CLK_100MHZ_PERIOD / 2;
+        end loop;
+        wait;
+    end process p_clk_gen;
+    
+    p_stimulus : process
+    begin
+        s_distance <= "111111111";
+        wait for 100 ns;
+        s_distance <= "100001110";
+        wait for 100 ns;
+        s_distance <= "011011100";
+        wait for 100 ns;
+        s_distance <= "010101010";
+        wait for 100 ns;
+        s_distance <= "001111000";
+        wait for 100 ns;
+        s_distance <= "001000110";
+        wait for 100 ns;
+        s_distance <= "000010100";
+        wait for 100 ns;
+        s_distance <= "000000000";
+        wait;
+    end process p_stimulus;
+
+end testbench;
+```
+
+<p align="center" width="100%">
+    <img width="80%" src="Images/buzzer_testbench.jpg"> 
+</p>
+
+
 
 ### LED Bar Graph
 
@@ -148,10 +348,50 @@ LED Bar Graph is an LED array, which is used to connect with electronic circuit 
 
 [Link to LED bargraph on Amazon ](https://www.amazon.com/Single-Segment-Display-Colors-Arduino/dp/B07BJ8ZGP7#descriptionAndDetails)
 
-#### *Listing of VHDL code of p_bargraf*
+#### *Listing of VHDL code of architecture at ledbar*
 
 ```vhdl
-   p_bargraf  :   process(s_state)
+architecture Behavioral of ledbar is
+    
+    type t_state is (st_300,
+                     st_250_300,
+                     st_200_250,
+                     st_150_200,
+                     st_100_150,
+                     st_50_100,
+                     st_10_50,
+                     st_10);
+    -- Define the signal that uses different states
+    signal s_state  : t_state;
+
+begin
+
+    --------------------------------------------------------------------
+    -- p_output_state:
+    -- Decides about actual state
+    --------------------------------------------------------------------
+    p_output_state : process(distance)
+    begin              
+        if(distance >  "100101100") then                                 --greater than 300
+            s_state <= st_300;
+        elsif(distance < "100101100" and distance > "011111010") then    --between 250 and 300
+            s_state <= st_250_300;
+        elsif(distance < "011111010" and distance > "011001000") then    --between 200 and 250
+            s_state <= st_200_250;
+        elsif(distance < "011001000" and distance > "010010110") then    --between 150 and 200
+            s_state <= st_150_200;
+        elsif(distance < "010010110" and distance > "001100100") then    --between 100 and 150
+            s_state <= st_100_150;
+        elsif(distance < "001100100" and distance > "000110010") then    --between 50 and 100
+            s_state <= st_50_100;
+        elsif(distance < "000110010" and distance > "000001010") then    --between 10 and 50                                                     
+            s_state <= st_10_50;
+        else                                                             --less than 50
+            s_state <= st_10;
+        end if;
+    end process p_output_state;
+    
+    p_bargraf  :   process(s_state)
     begin  
             case s_state is
                 when st_300 =>
@@ -179,12 +419,26 @@ LED Bar Graph is an LED array, which is used to connect with electronic circuit 
                     signal_LEDbar <= "11111111";
                          
             end case;     
-    end process p_bargraf;                        
+    end process p_bargraf;
+end architecture Behavioral;                    
 ```
 
-#### Listing of VHDL code of p_stimulus tb_ledbar
+#### Listing of VHDL code of architecture at tb_ledbar
 
 ```vhdl
+architecture Behavioral of tb_ledbar is
+
+    signal s_distance          : std_logic_vector(9 - 1 downto 0);
+    signal s_signal_LEDbar     : std_logic_vector(8 - 1 downto 0);
+    
+begin
+
+   uut_ledbar : entity work.ledbar
+        port map(
+            distance       => s_distance,
+            signal_LEDbar  => s_signal_LEDbar       
+        );
+    
     p_stimulus : process
     begin
         s_distance <= "111111111";
@@ -203,7 +457,9 @@ LED Bar Graph is an LED array, which is used to connect with electronic circuit 
         wait for 100 ns;
         s_distance <= "000000000";
         wait;
-    end process p_stimulus; 
+    end process p_stimulus;
+          
+end Behavioral;
 ```
 <p align="center" width="100%">
     <img width="80%" src="Images/LED_testbench.jpg"> 
