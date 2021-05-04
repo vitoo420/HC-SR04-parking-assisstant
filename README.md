@@ -706,6 +706,6 @@ Our assignment was to create a parking system using HC-SR04 sensor with sound PW
 * http://www.micropik.com/PDF/HCSR04.pdf
 * http://randomnerdtutorials.com/complete-guide-for-ultrasonic-sensor-hc-sr04/
 * http://www.ezdenki.com/ultrasonic.php
-* http://www.elecrow.com/hcsr04-ultrasonic-ranging-sensor-p-316.html(^ this one has some cool charts)
+* http://www.elecrow.com/hcsr04-ultrasonic-ranging-sensor-p-316.html
 * https://components101.com/displays/led-bar-graph
 * https://github.com/Digilent/digilent-xdc/blob/master/Arty-A7-100-Master.xdc
