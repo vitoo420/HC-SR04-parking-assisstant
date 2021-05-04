@@ -117,7 +117,7 @@ To interpret the time reading into a distance you need to change the first equat
 
 
 
-### Buzzer
+### Active buzzer
 
 #### *Listing of VHDL code of architecture at speaker*
 
