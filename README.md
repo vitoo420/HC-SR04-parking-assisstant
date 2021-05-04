@@ -486,8 +486,6 @@ LED Bar Graph is an LED array, which is used to connect with electronic circuit 
 * Storage Temperature: -30℃ to 85℃
 * Soldering Temperature: 260℃ for 5sec.
 
-[Link to LED bargraph on Amazon ](https://www.amazon.com/Single-Segment-Display-Colors-Arduino/dp/B07BJ8ZGP7#descriptionAndDetails)
-
 #### *Listing of VHDL code of architecture at ledbar*
 
 ```vhdl
@@ -605,9 +603,6 @@ end Behavioral;
     <img width="80%" src="Images/LED_testbench.jpg"> 
 </p>
 
-### 4 Digit 7 segment module
-
-#### 
 
 
 ## Imagine of block structure design
@@ -634,12 +629,27 @@ end Behavioral;
 
 #### Table for Buzzer
 
-
+| Pmod jc | Connection |
+| :-----: | :--------: |
+|   U12   |   Signal   |
+|   VCC   |    VCC     |
+|   GND   |    GND     |
 
 
 #### Table for LED Bargraph
 
-
+| Pmod jd | Connection |
+| :-----: | :--------: |
+|   D4    |    LED1    |
+|   D3    |    LED2    |
+|   F4    |    LED3    |
+|   F3    |    LED4    |
+|   E2    |    LED5    |
+|   D2    |    LED6    |
+|   H2    |    LED7    |
+|   G2    |    LED8    |
+|   VCC   |    VCC     |
+|   GND   |    GND     |
 
 
 #### Table for 7 seg 4 digits module 
@@ -689,32 +699,6 @@ sensor : entity work.sensor
 ```
 ## TOP schema
 ![waveforms](Images/top_schema.PNG)
-
-#### Bargraf
-
-| Pmod jd | Connection |
-| :-----: | :--------: |
-|   D4    |    LED1    |
-|   D3    |    LED2    |
-|   F4    |    LED3    |
-|   F3    |    LED4    |
-|   E2    |    LED5    |
-|   D2    |    LED6    |
-|   H2    |    LED7    |
-|   G2    |    LED8    |
-|   VCC   |    VCC     |
-|   GND   |    GND     |
-
-#### Speaker
-
-| Pmod jc | Connection |
-| :-----: | :--------: |
-|   U12   |   Signal   |
-|   VCC   |    VCC     |
-|   GND   |    GND     |
-
-
-
 
 
 
