@@ -17,7 +17,7 @@ Main objective of this projekt was to create funcional parking assistant using a
 * Arty A7-100T board 
 * HC-SR04 ultrasonic sensor
 * LED bargraph
-* Buzzer
+* Active buzzer
 * 4 Digit 7 segment module
 
 ### Arty A7: Artix-7 FPGA Development Board
@@ -314,6 +314,8 @@ end testbench;
     <img width="80%" src="Images/buzzer_testbench.jpg"> 
 </p>
 
+Active buzzer has DC power supply because there is an internal oscillator which generates the sound. In this program we're generating only one tone whose duration is dependent on 
+distance from HCSR04. Times don't reflect reality because of simulation purposes.
 
 
 ### LED Bar Graph
