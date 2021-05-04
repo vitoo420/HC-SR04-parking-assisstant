@@ -522,11 +522,6 @@ end Behavioral;
 
 
 
-## VHDL modules description and simulations
-
-Write your text here.
-
-
 ## TOP module description and simulations
 
 Write your text here.
@@ -549,3 +544,4 @@ Write your text here.
 * http://www.ezdenki.com/ultrasonic.php
 * http://www.elecrow.com/hcsr04-ultrasonic-ranging-sensor-p-316.html(^ this one has some cool charts)
 * https://components101.com/displays/led-bar-graph
+* https://github.com/Digilent/digilent-xdc/blob/master/Arty-A7-100-Master.xdc
