@@ -244,6 +244,7 @@ uut_ce : entity work.sensor
     
 end Behavioral;
 ```
+![waveforms](Images/schema_sensor.PNG)
 
 For the HC-SR04 sensor, the trigger module serves as an excitation signal for the trig. If resset is in 1, trig is in 0. signal clk counts the number of leading edges of the clock signal. These signals are stored in s_tick. The s_tick signal sets the trig value to 0 or 1. 
 The p_spacing process measures the length of the echo_i signal coming from the sensor. We used the signal length measurement in the trigger module based on the number of leading edges of the clock signal clk. The length of the echo_i signal is recalculated to the distance, which is then saves in the auxiliary signal p_spacing. The conversion is given in the HC-SR04 sensor datasheet.
