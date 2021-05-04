@@ -687,7 +687,8 @@ sensor : entity work.sensor
             b_spacing  => s_distance              
         );
 ```
-
+## TOP schema
+![waveforms](Images/top_schema.PNG)
 ## Video
 
 *////[![Project Video](http://img.youtube.com/vi/3xFRYkFs/0.jpg)](http://www.youtube.com/wa "Project Overview")///*
