@@ -2,13 +2,12 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Tue May  4 13:19:42 2021
-# Process ID: 5024
+# Start of session at: Tue May  4 16:46:55 2021
+# Process ID: 15872
 # Current directory: D:/DE1_projekt/Parking_sensor
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9568 D:\DE1_projekt\Parking_sensor\Parking_sensor.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9172 D:\DE1_projekt\Parking_sensor\Parking_sensor.xpr
 # Log file: D:/DE1_projekt/Parking_sensor/vivado.log
 # Journal file: D:/DE1_projekt/Parking_sensor\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project D:/DE1_projekt/Parking_sensor/Parking_sensor.xpr
-launch_simulation

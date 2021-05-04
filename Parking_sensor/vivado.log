@@ -2,41 +2,22 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Tue May  4 13:19:42 2021
-# Process ID: 5024
+# Start of session at: Tue May  4 16:46:55 2021
+# Process ID: 15872
 # Current directory: D:/DE1_projekt/Parking_sensor
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9568 D:\DE1_projekt\Parking_sensor\Parking_sensor.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9172 D:\DE1_projekt\Parking_sensor\Parking_sensor.xpr
 # Log file: D:/DE1_projekt/Parking_sensor/vivado.log
 # Journal file: D:/DE1_projekt/Parking_sensor\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project D:/DE1_projekt/Parking_sensor/Parking_sensor.xpr
-INFO: [Project 1-313] Project file moved from 'D:/Users/vitja/Documents/GitHub/DE1_projekt/Parking_sensor' since last save.
-WARNING: [filemgmt 56-2] Board Part Repository Path: Could not find the directory 'D:/../../../../../vitja/AppData/Roaming/Xilinx/Vivado/2020.2/xhub/board_store/xilinx_board_store', nor could it be found using path 'D:/../vitja/AppData/Roaming/Xilinx/Vivado/2020.2/xhub/board_store/xilinx_board_store'.
-WARNING: [filemgmt 56-2] Default IP Output Path : Could not find the directory 'D:/DE1_projekt/Parking_sensor/Parking_sensor.gen/sources_1', nor could it be found using path 'D:/Users/vitja/Documents/GitHub/DE1_projekt/Parking_sensor/Parking_sensor.gen/sources_1'.
-CRITICAL WARNING: [Project 1-311] Could not find the file 'D:/DE1_projekt/Parking_sensor/Parking_sensor.srcs/sim_1/new/tb_sen.vhd', nor could it be found using path 'D:/Users/vitja/Documents/GitHub/DE1_projekt/Parking_sensor/Parking_sensor.srcs/sim_1/new/tb_sen.vhd'.
+WARNING: [filemgmt 56-3] Board Part Repository Path: Could not find the directory 'D:/../../../../../vitja/AppData/Roaming/Xilinx/Vivado/2020.2/xhub/board_store/xilinx_board_store'.
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'D:/DE1_projekt/Parking_sensor/Parking_sensor.gen/sources_1'.
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/downland_vivado/Vivado/2020.2/data/ip'.
-open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:07 . Memory (MB): peak = 1018.387 ; gain = 0.000
-launch_simulation
-Command: launch_simulation 
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/DE1_projekt/Parking_sensor/Parking_sensor.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-54] Inspecting design source files for 'tb_sensor' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
-INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/DE1_projekt/Parking_sensor/Parking_sensor.sim/sim_1/behav/xsim'
-"xvhdl --incr --relax -prj tb_sensor_vhdl.prj"
-ERROR: [XSIM 43-4316] Can not find file: ../../../../Parking_sensor.srcs/sim_1/new/tb_sen.vhd
-INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
-INFO: [USF-XSim-99] Step results log file:'D:/DE1_projekt/Parking_sensor/Parking_sensor.sim/sim_1/behav/xsim/xvhdl.log'
-ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'D:/DE1_projekt/Parking_sensor/Parking_sensor.sim/sim_1/behav/xsim/xvhdl.log' file for more information.
-ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
-ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:06 . Memory (MB): peak = 1015.938 ; gain = 0.000
 exit
-INFO: [Common 17-206] Exiting Vivado at Tue May  4 13:49:55 2021...
+INFO: [Common 17-206] Exiting Vivado at Tue May  4 18:10:31 2021...
