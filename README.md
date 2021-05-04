@@ -634,9 +634,7 @@ end Behavioral;
 
 #### Table for Buzzer
 
-|Buzzer pin| Board pin|
-|+| |
-|-| |
+
 
 
 #### Table for LED Bargraph
@@ -696,6 +694,9 @@ sensor : entity work.sensor
 
 
 ##  Discussion of results
+
+Our assignment was to create a parking system using HC-SR04 sensors with sound PWM signaling and LED bargraph. We active the goals of the project, we managed to create a functional parking assistant.Generating of trigger signal from sensor worked perfectly. We used an external bargraph for more user friendly output. But we didnt manage to display values on 7 segment display. Our project could be further enriched by for example sound signaling with a different frequency or just more range of observation distance.
+
 
 
 ## References
