@@ -90,39 +90,17 @@ uut_ce : entity work.sensor
     p_echo : process
     begin
     s_reset <= '0';
+    s_echo <= '0';
     wait for 120 ns;
     s_echo <= '1';
     wait for 150 ns;
     s_echo <= '0';
+    wait for 120 ns;
+    s_echo <= '1';
+    wait for 250ns;
+    s_echo <= '0';
     wait;
     end process p_echo; 
     
---    p_trigger : process
---    begin
---    s_trig <= '1';
---    wait for 10ns;
---    s_trig <= '0';
---    wait;
---    end process p_trigger;
-    
---    p_stimulus : process
---    begin
---    s_reset <= '0';
---    s_echo <= '0';
---    wait for 60ns;
---    while now < 10000ns loop
---        s_echo <= '0';
---        wait for 10us;
---        s_echo <= '1';
---        wait for s_time;
---        s_echo <= '0';
---        wait for 60ns - s_time;
---        s_time <= s_time - 2400us;
---    end loop;
---    wait;    
-        
-        --report "Stimulus process started" severity note;
-        --report "Stimulus process finished" severity note;
---    end process p_stimulus;
 end Behavioral;
 
