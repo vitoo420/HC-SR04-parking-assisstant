@@ -704,8 +704,7 @@ sensor : entity work.sensor
 
 
 ## Video
-
-*////[![Project Video](http://img.youtube.com/vi/3xFRYkFs/0.jpg)](http://www.youtube.com/wa "Project Overview")///*
+[Prezentacia projektu](https://drive.google.com/drive/folders/1F3RPGmfBNF3DrOG8SXTOZOx0HYGYB6iQ)
 
 
 ##  Discussion of results
