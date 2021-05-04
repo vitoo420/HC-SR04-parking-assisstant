@@ -118,9 +118,131 @@ To interpret the time reading into a distance you need to change the first equat
 
 #### *Listing of VHDL code of architecture at sensor*
 ```vhdl
+library ieee;               -- Standard library
+use ieee.std_logic_1164.all;-- Package for data types and logic operations
+use ieee.numeric_std.all;   -- Package for arithmetic operations
+
+entity sensor is
+port(
+    CLK     : in std_logic;     --clock
+    reset   : in std_logic;
+    echo    : in std_logic;    
+    trig    : out std_logic; 
+    b_spacing : out std_logic_vector(9 - 1 downto 0) := "000000000"
+        
+    );  
+end entity sensor;
+
+architecture Behavioral of sensor is 
+
+    signal s_tick_trig  : unsigned(6 - 1 downto 0) := "000000";
+    signal s_tick_echo  : unsigned(6 - 1 downto 0) := "000000";
+    
+begin
+
+    p_trig : process(clk)
+        begin
+            if rising_edge(clk) then
+                s_tick_trig <= s_tick_trig + 1;
+                if (reset = '1') then              -- reset 1, trigger 0           
+                    trig <= '0';    
+                end if;
+                
+                if(s_tick_trig < "001011") then
+                    trig <= '1';
+                elsif(s_tick_trig < "011110" and s_tick_trig > "001010") then
+                    trig <= '0';
+                else
+                    s_tick_trig <= "000000";
+                end if;
+            end if;
+    end process p_trig;
+    
+
+    p_spacing : process(clk, echo)
+    begin
+    if rising_edge(clk) then
+            if reset = '1' then
+               b_spacing <= "000000000"; 
+               s_tick_echo <= "000000";
+            end if;
+            if(echo = '1') then
+                s_tick_echo <= s_tick_echo +1;                
+            end if;
+    end if;
+    
+    if falling_edge(echo) then
+        b_spacing <= std_logic_vector(s_tick_echo * "111");
+    end if;
+    
+    end process p_spacing;
+end architecture Behavioral;
 ```
 #### Listing of VHDL code of architecture at tb_sensor
 ```vhdl
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.NUMERIC_STD.ALL;
+-- Uncomment the following library declaration if using
+-- arithmetic functions with Signed or Unsigned values
+--use IEEE.NUMERIC_STD.ALL;
+
+-- Uncomment the following library declaration if instantiating
+-- any Xilinx leaf cells in this code.
+--library UNISIM;
+--use UNISIM.VComponents.all;
+
+entity tb_sensor is
+--  Port ( );
+end tb_sensor;
+architecture Behavioral of tb_sensor is
+    constant c_CLK_100MHZ_PERIOD : time := 10 ns;
+    
+    signal s_clk                    : std_logic;
+    signal s_reset                  : std_logic;
+    signal s_echo                   : std_logic;    
+    signal s_trig                   : std_logic;
+    signal s_time                   : time := 100 us;
+    signal s_spacing                : std_logic_vector(9 - 1 downto 0);
+    
+begin
+
+uut_ce : entity work.sensor
+   port map(
+        clk     => s_clk,
+        trig    => s_trig,
+        echo    => s_echo,
+        reset   => s_reset,
+        b_spacing => s_spacing
+           );
+           
+    p_clk_gen : process
+    begin
+     while now < 10000 ns loop   -- 10 usec of simulation
+            s_clk <= '0';
+            wait for c_CLK_100MHZ_PERIOD / 2;
+            s_clk <= '1';
+            wait for c_CLK_100MHZ_PERIOD / 2;
+        end loop;
+    wait;
+    end process p_clk_gen; 
+    
+    p_echo : process
+    begin
+    s_reset <= '0';
+    s_echo <= '0';
+    wait for 120 ns;
+    s_echo <= '1';
+    wait for 150 ns;
+    s_echo <= '0';
+    wait for 120 ns;
+    s_echo <= '1';
+    wait for 250ns;
+    s_echo <= '0';
+    wait;
+    end process p_echo; 
+    
+end Behavioral;
 ```
 For the HC-SR04 sensor, the trigger module serves as an excitation signal for the trig. If resset is in 1, trig is in 0. signal clk counts the number of leading edges of the clock signal. These signals are stored in s_tick. The s_tick signal sets the trig value to 0 or 1. 
 The p_spacing process measures the length of the echo_i signal coming from the sensor. We used the signal length measurement in the trigger module based on the number of leading edges of the clock signal clk. The length of the echo_i signal is recalculated to the distance, which is then saves in the auxiliary signal p_spacing. The conversion is given in the HC-SR04 sensor datasheet.
