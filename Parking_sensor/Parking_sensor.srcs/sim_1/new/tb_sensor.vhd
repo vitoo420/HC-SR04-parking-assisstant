@@ -63,6 +63,7 @@ architecture Behavioral of tb_sensor is
     signal s_echo                   : std_logic;    
     signal s_trig                   : std_logic;
     signal s_time                   : time := 100 us;
+    signal s_spacing                : std_logic_vector(9 - 1 downto 0);
     
 begin
 
@@ -71,8 +72,8 @@ uut_ce : entity work.sensor
         clk     => s_clk,
         trig    => s_trig,
         echo    => s_echo,
-        reset   => s_reset
-        
+        reset   => s_reset,
+        b_spacing => s_spacing
            );
            
     p_clk_gen : process
@@ -89,7 +90,7 @@ uut_ce : entity work.sensor
     p_echo : process
     begin
     s_reset <= '0';
-    wait for 35 ns;
+    wait for 120 ns;
     s_echo <= '1';
     wait for 150 ns;
     s_echo <= '0';
