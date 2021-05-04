@@ -8,10 +8,10 @@
 
 [Link to GitHub project folder ](https://github.com/vitoo420/DE1_projekt)
 
- 
+
 ## Project objectives
 Main objective of this projekt was to create funcional parking assistant using an Arty A7: Artix-7 FPGA Development board. To achive this intention we used HC-SR04 ultrasonic sensor as input for measuring the distance between two objekts. We used buzzer and LED bargraph as outputs for signaling measured distance to the user . We had been additionally considering displaying the distance on 7-segment display for more accurate measuring. But more on that later. 
- 
+
 <p align="center" width="100%">
    <img width="40%" src="https://cdn.dribbble.com/users/1287580/screenshots/5410442/dribbble_2.gif"> 
  </p>
@@ -689,6 +689,36 @@ sensor : entity work.sensor
 ```
 ## TOP schema
 ![waveforms](Images/top_schema.PNG)
+
+#### Bargraf
+
+| Pmod jd | Connection |
+| :-----: | :--------: |
+|   D4    |    LED1    |
+|   D3    |    LED2    |
+|   F4    |    LED3    |
+|   F3    |    LED4    |
+|   E2    |    LED5    |
+|   D2    |    LED6    |
+|   H2    |    LED7    |
+|   G2    |    LED8    |
+|   VCC   |    VCC     |
+|   GND   |    GND     |
+
+#### Speaker
+
+| Pmod jc | Connection |
+| :-----: | :--------: |
+|   U12   |   Signal   |
+|   VCC   |    VCC     |
+|   GND   |    GND     |
+
+
+
+
+
+
+
 ## Video
 
 *////[![Project Video](http://img.youtube.com/vi/3xFRYkFs/0.jpg)](http://www.youtube.com/wa "Project Overview")///*
