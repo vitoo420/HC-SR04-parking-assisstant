@@ -62,7 +62,7 @@ architecture Behavioral of tb_sensor is
     signal s_reset                  : std_logic;
     signal s_echo                   : std_logic;    
     signal s_trig                   : std_logic;
-    signal s_time                   : time := 23200us;
+    signal s_time                   : time := 100 us;
     
 begin
 
@@ -89,20 +89,20 @@ uut_ce : entity work.sensor
     p_echo : process
     begin
     s_reset <= '0';
-    wait for 35 ms;
+    wait for 35 ns;
     s_echo <= '1';
-    wait for 30 ms;
+    wait for 150 ns;
     s_echo <= '0';
     wait;
     end process p_echo; 
     
-    p_trigger : process
-    begin
-    s_trig <= '1';
-    wait for 10us;
-    s_trig <= '0';
-    wait;
-    end process p_trigger;
+--    p_trigger : process
+--    begin
+--    s_trig <= '1';
+--    wait for 10ns;
+--    s_trig <= '0';
+--    wait;
+--    end process p_trigger;
     
 --    p_stimulus : process
 --    begin
@@ -124,3 +124,4 @@ uut_ce : entity work.sensor
         --report "Stimulus process finished" severity note;
 --    end process p_stimulus;
 end Behavioral;
+

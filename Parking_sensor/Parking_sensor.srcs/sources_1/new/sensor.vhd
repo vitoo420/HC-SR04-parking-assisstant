@@ -23,18 +23,18 @@ begin
         if rising_edge(clk) then
             if reset = '1' then              -- reset 1, trigger 0           
                trig <= '0'; 
-               s_tick <= 0;           
+               --s_tick <= 0;   
+            end if;        
           else
-            if (s_tick <= 1000) then         -- trigger 1 (10us)                     
+            if (s_tick <= 10) then         -- trigger 1 (10us)                     
                 trig <= '1'; 
-                s_tick <= s_tick + 1;
-          elsif (s_tick < 10000000 and s_tick >= 1000) then   --trigger 0
-                 s_tick <= s_tick + 1;
+               --s_tick <= s_tick + 1;
+          elsif (s_tick < 100 and s_tick > 10) then   --trigger 0
+                -- s_tick <= s_tick + 1;
                  trig <= '0';
           else 
-                 s_tick <= 0;                --reset 
-                end if;
-           end if;
+                 --s_tick <= 0;                --reset 
+                end if; 
        end if;
     end process p_trig;
     
