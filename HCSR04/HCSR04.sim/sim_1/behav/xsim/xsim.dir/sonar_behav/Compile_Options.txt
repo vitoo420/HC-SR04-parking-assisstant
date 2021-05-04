@@ -1,1 +1,0 @@
--wto "8194182abf82407ebf7d927473917ea6" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "sonar_behav" "xil_defaultlib.sonar" -log "elaborate.log" 

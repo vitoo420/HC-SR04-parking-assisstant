@@ -56,20 +56,23 @@ entity tb_sensor is
 --  Port ( );
 end tb_sensor;
 architecture Behavioral of tb_sensor is
-
     constant c_CLK_100MHZ_PERIOD : time := 10 ns;
-    signal reset   : std_logic;
-    signal echo    : std_logic;    
-    signal trig    : std_logic
+    
+    signal s_clk                    : std_logic;
+    signal s_reset                  : std_logic;
+    signal s_echo                   : std_logic;    
+    signal s_trig                   : std_logic;
+    signal s_time                   : time := 23200us;
+    
 begin
 
 uut_ce : entity work.sensor
    port map(
-        clk => s_clk,
-        trig => s_trig,
-        echo => s_echo,
-        cm_units_o => s_cm_units_o,
-        cm_tens_o => s_cm_tens_o
+        clk     => s_clk,
+        trig    => s_trig,
+        echo    => s_echo,
+        reset   => s_reset
+        
            );
            
     p_clk_gen : process
@@ -80,22 +83,44 @@ uut_ce : entity work.sensor
             s_clk <= '1';
             wait for c_CLK_100MHZ_PERIOD / 2;
         end loop;
-     wait;   
+    wait;
     end process p_clk_gen; 
     
     p_echo : process
     begin
-    wait for 120 ns;
+    s_reset <= '0';
+    wait for 35 ms;
     s_echo <= '1';
-    wait for 158 ns;
+    wait for 30 ms;
     s_echo <= '0';
+    wait;
     end process p_echo; 
     
-        p_stimulus : process
+    p_trigger : process
     begin
-        report "Stimulus process started" severity note;
-
-        report "Stimulus process finished" severity note;
-        wait;
-    end process p_stimulus;
+    s_trig <= '1';
+    wait for 10us;
+    s_trig <= '0';
+    wait;
+    end process p_trigger;
+    
+--    p_stimulus : process
+--    begin
+--    s_reset <= '0';
+--    s_echo <= '0';
+--    wait for 60ns;
+--    while now < 10000ns loop
+--        s_echo <= '0';
+--        wait for 10us;
+--        s_echo <= '1';
+--        wait for s_time;
+--        s_echo <= '0';
+--        wait for 60ns - s_time;
+--        s_time <= s_time - 2400us;
+--    end loop;
+--    wait;    
+        
+        --report "Stimulus process started" severity note;
+        --report "Stimulus process finished" severity note;
+--    end process p_stimulus;
 end Behavioral;

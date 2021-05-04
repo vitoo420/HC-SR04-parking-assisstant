@@ -42,15 +42,15 @@ begin
     begin
         if rising_edge(clk) then
             if reset = '1' then
-               s_spacing <= 1000; 
+               s_spacing <= 0; 
                s_tick <= 0;
+            end if;
          else
             if echo = '1' then      -- echo 1, start counting time
                s_tick <= s_tick +1; 
                s_spacing <= s_tick /(100*58);
-         else
+            else
                s_tick <= 0;
-                end if;
             end if;
         end if;
     end process p_spacing;

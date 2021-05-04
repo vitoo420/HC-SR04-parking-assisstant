@@ -6,6 +6,7 @@ vhdl xil_defaultlib  \
 "../../../../Parking_sensor.srcs/sources_1/new/ledbar.vhd" \
 "../../../../Parking_sensor.srcs/sim_1/new/tb_speaker.vhd" \
 "../../../../Parking_sensor.srcs/sim_1/new/tb_ledbar.vhd" \
+"../../../../Parking_sensor.srcs/sim_1/new/tb_sensor.vhd" \
 "../../../../Parking_sensor.srcs/sim_1/new/tb_sen.vhd" \
 
 # Do not sort compile order
