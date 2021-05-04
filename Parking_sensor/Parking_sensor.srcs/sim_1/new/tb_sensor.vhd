@@ -2,6 +2,27 @@
 -- Company: 
 -- Engineer: 
 -- 
+-- Create Date: 03.05.2021 19:25:03
+-- Design Name: 
+-- Module Name: tb_sensor - Behavioral
+-- Project Name: 
+-- Target Devices: 
+-- Tool Versions: 
+-- Description: 
+-- 
+-- Dependencies: 
+-- 
+-- Revision:
+-- Revision 0.01 - File Created
+-- Additional Comments:
+-- 
+----------------------------------------------------------------------------------
+
+
+----------------------------------------------------------------------------------
+-- Company: 
+-- Engineer: 
+-- 
 -- Create Date: 24.04.2021 18:16:52
 -- Design Name: 
 -- Module Name: tb_sonar - Behavioral
@@ -31,26 +52,26 @@ use IEEE.NUMERIC_STD.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity tb_sonar is
+entity tb_sensor is
 --  Port ( );
-end tb_sonar;
-architecture Behavioral of tb_sonar is
-    constant c_CLK_100MHZ_PERIOD : time := 10 ns;
+end tb_sensor;
+architecture Behavioral of tb_sensor is
 
-    signal s_clk        : std_logic;
-    signal s_trig       : std_logic;
-    signal s_echo       : std_logic := '0';
-    signal s_cm_units_o : unsigned(3 downto 0);
-    signal s_cm_tens_o  : unsigned(3 downto 0);
+    constant c_CLK_100MHZ_PERIOD : time := 10 ns;
+    signal reset   : std_logic;
+    signal echo    : std_logic;    
+    signal trig    : std_logic
 begin
-    uut_ce : entity work.sonar (Behavioral)
-        port map(
+
+uut_ce : entity work.sensor
+   port map(
         clk => s_clk,
         trig => s_trig,
         echo => s_echo,
         cm_units_o => s_cm_units_o,
         cm_tens_o => s_cm_tens_o
-        );
+           );
+           
     p_clk_gen : process
     begin
      while now < 10000 ns loop   -- 10 usec of simulation
@@ -68,9 +89,6 @@ begin
     s_echo <= '1';
     wait for 158 ns;
     s_echo <= '0';
-    wait for 220 ns;
-    s_echo <= '1';
-    wait;
     end process p_echo; 
     
         p_stimulus : process

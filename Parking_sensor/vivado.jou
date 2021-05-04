@@ -44,3 +44,24 @@ source tb_sonar.tcl
 close_sim
 launch_simulation
 source tb_sonar.tcl
+close_sim
+export_ip_user_files -of_objects  [get_files D:/DE1_projekt/Parking_sensor/Parking_sensor.srcs/sim_1/new/tb_HCSR04.vhd] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 D:/DE1_projekt/Parking_sensor/Parking_sensor.srcs/sim_1/new/tb_HCSR04.vhd
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open D:/DE1_projekt/Parking_sensor/Parking_sensor.srcs/sim_1/new/tb_sensor.vhd w ]
+add_files -fileset sim_1 D:/DE1_projekt/Parking_sensor/Parking_sensor.srcs/sim_1/new/tb_sensor.vhd
+launch_simulation
+reorder_files -fileset sim_1 -after D:/DE1_projekt/Parking_sensor/Parking_sensor.srcs/sim_1/new/tb_sensor.vhd D:/DE1_projekt/Parking_sensor/Parking_sensor.srcs/sim_1/new/tb_sensor.vhd
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_speaker [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top sensor [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+reorder_files -fileset sim_1 -after D:/DE1_projekt/Parking_sensor/Parking_sensor.srcs/sim_1/new/tb_sensor.vhd D:/DE1_projekt/Parking_sensor/Parking_sensor.srcs/sim_1/new/tb_sensor.vhd
