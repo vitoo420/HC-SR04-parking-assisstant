@@ -634,7 +634,9 @@ end Behavioral;
 
 #### Table for Buzzer
 
-
+|Buzzer pin| Board pin|
+|+| |
+|-| |
 
 
 #### Table for LED Bargraph
