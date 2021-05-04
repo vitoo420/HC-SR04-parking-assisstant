@@ -704,8 +704,8 @@ sensor : entity work.sensor
 
 
 ## Video
-[Prezentacia projektu](https://drive.google.com/file/d/1ztXq-a6Mb7MNopkD0W_8j9k-eegLYRGU/view?usp=sharing)
-[Prezentacia projektu lepšia kvalita ](https://drive.google.com/file/d/1HCLn1rZsakDIqMv3NvoTUwG7J55BaHzu/view?usp=sharing)
+* [Prezentacia projektu](https://drive.google.com/file/d/1ztXq-a6Mb7MNopkD0W_8j9k-eegLYRGU/view?usp=sharing)
+* [Prezentacia projektu lepšia kvalita ](https://drive.google.com/file/d/1HCLn1rZsakDIqMv3NvoTUwG7J55BaHzu/view?usp=sharing)
 
 ##  Discussion of results
 
