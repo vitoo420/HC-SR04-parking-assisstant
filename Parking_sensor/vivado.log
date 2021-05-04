@@ -2,22 +2,23 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Tue May  4 16:46:55 2021
-# Process ID: 15872
+# Start of session at: Tue May  4 19:14:15 2021
+# Process ID: 6908
 # Current directory: D:/DE1_projekt/Parking_sensor
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9172 D:\DE1_projekt\Parking_sensor\Parking_sensor.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5592 D:\DE1_projekt\Parking_sensor\Parking_sensor.xpr
 # Log file: D:/DE1_projekt/Parking_sensor/vivado.log
 # Journal file: D:/DE1_projekt/Parking_sensor\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project D:/DE1_projekt/Parking_sensor/Parking_sensor.xpr
-WARNING: [filemgmt 56-3] Board Part Repository Path: Could not find the directory 'D:/../../../../../vitja/AppData/Roaming/Xilinx/Vivado/2020.2/xhub/board_store/xilinx_board_store'.
-WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'D:/DE1_projekt/Parking_sensor/Parking_sensor.gen/sources_1'.
+INFO: [Project 1-313] Project file moved from 'D:/Users/vitja/Documents/GitHub/DE1_projekt/Parking_sensor' since last save.
+WARNING: [filemgmt 56-2] Board Part Repository Path: Could not find the directory 'D:/../../../../../vitja/AppData/Roaming/Xilinx/Vivado/2020.2/xhub/board_store/xilinx_board_store', nor could it be found using path 'D:/../vitja/AppData/Roaming/Xilinx/Vivado/2020.2/xhub/board_store/xilinx_board_store'.
+WARNING: [filemgmt 56-2] Default IP Output Path : Could not find the directory 'D:/DE1_projekt/Parking_sensor/Parking_sensor.gen/sources_1', nor could it be found using path 'D:/Users/vitja/Documents/GitHub/DE1_projekt/Parking_sensor/Parking_sensor.gen/sources_1'.
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/downland_vivado/Vivado/2020.2/data/ip'.
-open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:06 . Memory (MB): peak = 1015.938 ; gain = 0.000
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:06 . Memory (MB): peak = 1016.453 ; gain = 0.000
 exit
-INFO: [Common 17-206] Exiting Vivado at Tue May  4 18:10:31 2021...
+INFO: [Common 17-206] Exiting Vivado at Tue May  4 19:14:45 2021...
