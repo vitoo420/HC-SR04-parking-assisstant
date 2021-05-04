@@ -1,6 +1,6 @@
 # Parking assistant with HC-SR04 ultrasonic sensor, sound signaling using PWM, signaling by LED bargraph.
 
-## Team members
+## Team members 
 * Jančošek Matúš
 * Jančová Silvie
 * Jánoš Vít
@@ -8,16 +8,20 @@
 
 [Link to GitHub project folder ](https://github.com/vitoo420/DE1_projekt)
 
+ 
 ## Project objectives
 Main objective of this projekt was to create funcional parking assistant using an Arty A7: Artix-7 FPGA Development board. To achive this intention we used HC-SR04 ultrasonic sensor as input for measuring the distance between two objekts. We used buzzer and LED bargraph as outputs for signaling measured distance to the user . We had been additionally considering displaying the distance on 7-segment display for more accurate measuring. But more on that later. 
-
+ 
+<p align="center" width="100%">
+   <img width="40%" src="https://cdn.dribbble.com/users/1287580/screenshots/5410442/dribbble_2.gif"> 
+ </p>
 
 ## Hardware description
 #### *Hardware used in this project:*
 * Arty A7-100T board 
 * HC-SR04 ultrasonic sensor
-* LED bargraph
 * Active buzzer
+* LED bargraph
 * 4 Digit 7 segment module
 
 ### Arty A7: Artix-7 FPGA Development Board
@@ -113,7 +117,7 @@ To interpret the time reading into a distance you need to change the first equat
 
 
 
-### Buzzer
+### Active buzzer
 
 #### *Listing of VHDL code of architecture at speaker*
 
@@ -518,11 +522,6 @@ end Behavioral;
 
 
 
-## VHDL modules description and simulations
-
-Write your text here.
-
-
 ## TOP module description and simulations
 
 Write your text here.
@@ -545,3 +544,4 @@ Write your text here.
 * http://www.ezdenki.com/ultrasonic.php
 * http://www.elecrow.com/hcsr04-ultrasonic-ranging-sensor-p-316.html(^ this one has some cool charts)
 * https://components101.com/displays/led-bar-graph
+* https://github.com/Digilent/digilent-xdc/blob/master/Arty-A7-100-Master.xdc
