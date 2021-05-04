@@ -695,7 +695,7 @@ sensor : entity work.sensor
 
 ##  Discussion of results
 
-Our assignment was to create a parking system using HC-SR04 sensors with sound PWM signaling and LED bargraph. We active the goals of the project, we managed to create a functional parking assistant.Generating of trigger signal from sensor worked perfectly. We used an external bargraph for more user friendly output. But we didnt manage to display values on 7 segment display. Our project could be further enriched by for example sound signaling with a different frequency or just more range of observation distance.
+Our assignment was to create a parking system using HC-SR04 sensor with sound PWM signaling and LED bargraph. We active the goals of the project, we managed to create a functional parking assistant. Generating of trigger signal from sensor worked perfectly. We used an external bargraph for more user friendly environment. But we didnt manage to display distance values on 7 segment display. We werent able to make this park of project fully funcional. Our project could be further enriched by for example sound signaling with a different frequency or just more range of observation distance.
 
 
 
