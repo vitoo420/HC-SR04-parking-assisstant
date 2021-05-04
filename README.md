@@ -657,9 +657,36 @@ end Behavioral;
 
 
 ## TOP module description and simulations
-
-Write your text here.
-
+```vhdl
+ledbar : entity work.ledbar
+        port map(
+            distance => s_distance,
+            signal_LEDbar(7) => jd(7),
+            signal_LEDbar(6) => jd(6), 
+            signal_LEDbar(5) => jd(5),
+            signal_LEDbar(4) => jd(4),
+            signal_LEDbar(3) => jd(3),
+            signal_LEDbar(2) => jd(2),
+            signal_LEDbar(1) => jd(1),
+            signal_LEDbar(0) => jd(0)
+        );
+        
+speaker : entity work.speaker
+        port map(
+            distance    => s_distance,
+            beep_switch => jc,
+            clk         => CLK100MHZ
+        );
+        
+sensor : entity work.sensor
+        port map(
+            CLK        => CLK100MHZ,
+            reset      => BTNC,
+            echo       => ja,
+            trig       => jc,
+            b_spacing  => s_distance              
+        );
+```
 
 ## Video
 
